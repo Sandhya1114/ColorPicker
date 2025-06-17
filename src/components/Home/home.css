@@ -1,0 +1,139 @@
+.homeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  /* background: linear-gradient(135deg, #fceabb, #f8b500); */
+  min-height: 80vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  /* background: #FF8B4E;
+  background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%); */
+}
+.ImgHeading{
+  display: flex;
+  justify-content: center;
+}
+
+.heroSection {
+  max-width: 700px;
+  /* background-color: white; */
+  /* padding: 40px;
+  border-radius: 12px; */
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); */
+  animation: slideUp 0.8s ease;
+}
+
+.mainHeading {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  color: rgba(255, 3, 105, 1);
+}
+
+.subText {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.mainButton {
+  padding: 12px 24px;
+  font-size: 26px;
+  /* background: linear-gradient(120deg, #ff6ec4, #7873f5); */
+  background: #FF8B4E;
+  background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+.mainButton:hover {
+  transform: scale(1.05);
+  background: linear-gradient(120deg, #dbd3d8, #9a95ff);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* Services Section */
+.servicesSection {
+  padding: 60px 20px;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.servicesHeading {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.servicesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.serviceBox {
+  background: #FF8B4E;
+  background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 59px;
+  width: 278px;
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.serviceBox h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.serviceBox p {
+  font-size: 14px;
+  color:white;
+}
+.HeroImg {
+  border-radius: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  
+}
+
+
+.serviceBox:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  color: #fff;
+}
+
+
+
+
+
+
+
