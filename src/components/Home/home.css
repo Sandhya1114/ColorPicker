@@ -9,6 +9,7 @@
   animation: fadeIn 1s ease-in;
   /* background: #FF8B4E;
   background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%); */
+  background: #f3f4f6;
 }
 .ImgHeading{
   display: flex;

@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react';
 import ColorThief from 'colorthief';
 import './ColorExtractor.css';
-import PaletteBrowser from './PaletteBrowser';
+// import PaletteBrowser from './PaletteBrowser';
+import PaletteGrid from '../Palattes/PaletteGrid';
 
 function rgbToHex(r, g, b) {
   return (
@@ -41,52 +42,58 @@ export default function ColorExtractor() {
   };
 
   return (
-    <div className="mainContainer">
-      <div className="leftPanel">
-        <div className="fileInputContainer">
-          <h1 className="title">Upload an Image</h1>
-          <h2 className="subtitle">The easiest place to get colors from your photos</h2>
+    <div className='forDivieded'>
+      <div className="mainContainer">
+        <div className="leftPanel">
+          <div className="fileInputContainer">
+            <h1 className="title">Upload an Image</h1>
+            <h2 className="subtitle">The easiest place to get colors from your photos</h2>
 
-          <label htmlFor="fileInput" className="fileLabel">Select file</label>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={handleImageUpload}
-            className="fileInput"
-            id="fileInput"
-          />
-        </div>
-      </div>
-
-      <div className="rightPanel">
-        {imageSrc && (
-          <>
-            <img
-              src={imageSrc}
-              alt="Uploaded"
-              ref={imgRef}
-              crossOrigin="anonymous"
-              onLoad={handleImageLoad}
-              className="imagePreview"
+            <label htmlFor="fileInput" className="fileLabel">Select file</label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="fileInput"
+              id="fileInput"
             />
-            <div className="colorGrid">
-              {colors.map((color, index) => {
-                const hex = rgbToHex(...color);
-                return (
-                  <div key={index} className="colorSwatch">
-                    <div
-                      className="colorBox"
-                      style={{ backgroundColor: hex }}
-                    />
-                    <span className="hexCode">{hex}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </>
-        )}
-      </div>
-      {/* <PaletteBrowser/> */}
+          </div>
+        </div>
+
+        <div className="rightPanel">
+          {imageSrc && (
+            <>
+              <img
+                src={imageSrc}
+                alt="Uploaded"
+                ref={imgRef}
+                crossOrigin="anonymous"
+                onLoad={handleImageLoad}
+                className="imagePreview"
+              />
+              <div className="colorGrid">
+                {colors.map((color, index) => {
+                  const hex = rgbToHex(...color);
+                  return (
+                    <div key={index} className="colorSwatch">
+                      <div
+                        className="colorBox"
+                        style={{ backgroundColor: hex }}
+                      />
+                      <span className="hexCode">{hex}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          )}
+        </div>
+        {/* <PaletteBrowser/> */} 
     </div>
+    <div>
+      <PaletteGrid />
+    </div>
+  </div>
+    
   );
 }

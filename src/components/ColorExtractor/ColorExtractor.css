@@ -1,9 +1,15 @@
+.forDivieded{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .mainContainer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
-  max-width: 900px;
+  width: 80vw;
   margin: 40px auto;
   padding: 24px;
   background-color: #d1d3d7;
