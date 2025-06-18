@@ -32,8 +32,8 @@
   gap: 12px;
   justify-content: center;
   margin-top: 20px;
-  width: 80vw;
-    margin: auto;
+  width: 95vw;
+  margin: auto;
 }
 
 .paletteBox {
@@ -71,7 +71,7 @@
 /* ✅ Tooltip for hex code */
 .hexTooltip {
   position: absolute;
-  bottom: -32px; /* slightly lower for spacing */
+  bottom: 50px; /* slightly lower for spacing */
   left: 50%;
   transform: translateX(-50%);
   background-color: #333;
