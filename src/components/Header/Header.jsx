@@ -1,8 +1,10 @@
 // Header.jsx
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
-export default function Header() {
+export default function Header({ history }) {
+  const navigate = useNavigate();
+
   return (
     <header className="header">
       <div className="headerContainer">
@@ -12,8 +14,17 @@ export default function Header() {
           <Link to="/upload">Upload</Link>
           <a href="#">Tools</a>
           <a href="#">Sign In</a>
+          {history.length > 0 && (
+            <button
+              className="historyBtn"
+              onClick={() => navigate('/history')}
+            >
+              View History
+            </button>
+          )}
         </nav>
       </div>
     </header>
   );
 }
+
