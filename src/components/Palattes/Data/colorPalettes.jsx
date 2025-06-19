@@ -863,6 +863,175 @@
 
 // export default palettesData;
 
+// const colorNames = {
+//   'red': ['#ff0000', '#ff5252', '#ff8a80', '#ff1744', '#d50000'],
+//   'blue': ['#0000ff', '#2962ff', '#304ffe', '#3d5afe', '#1a237e', '#2196f3', '#bbdefb', '#e3f2fd'],
+//   'green': ['#00ff00', '#00c853', '#00e676', '#69f0ae', '#b9f6ca'],
+//   'yellow': ['#ffff00', '#FF7D29', '#F3C623', '#FCF259', '#FFF085','#F29F58',"#FFB22C","#ffe5a9",'#f4ebb2','#fdffb6'],
+//   'purple': ['#9c27b0', '#7b1fa2', '#6a1b9a', '#4a148c', '#e1bee7'],
+//   'orange': ['#ff9800', '#fb8c00', '#f57c00', '#ffa726', '#ffe0b2'],
+//   'pink': ['#e91e63', '#c2185b', '#f06292', '#f8bbd0', '#fce4ec',"#E82561"],
+//   // Add more color names and variations as needed
+// };
+const colorNames = {
+  'red': [
+    '#ff0000', '#ff5252', '#ff8a80', '#ff1744', '#d50000', '#E82561', 
+    '#FF7D29', '#E6521F', '#EA2F14', '#F564A9', '#D84040', '#A31D1D',
+    '#FFB200', '#EB5B00', '#D91656', '#640D5F', '#E52020', '#FBA518',
+    '#F9CB43', '#FF9B17', '#F16767', '#FFB38E', '#FFCF9D', '#FFB26F',
+    '#DE8F5F', '#FF6F3C', '#FF3F33', '#FEBA17', '#F29F58', '#F2B28C',
+    '#F6DED8', '#F3C623', '#FA812F', '#FA4032', '#F95B25', '#F7B088',
+    '#F9D6AC', '#F9C62D', '#FE5D26', '#FF4545', '#FF204E', '#C30E59',
+    '#AF1740', '#CC2B52', '#DE7C7D', '#FB4141', '#FF6969', '#C80036',
+    '#FFA27F', '#FF9D3D', '#FF7676', '#FF70AB', '#FF8080', '#FF4B91',
+    '#FB9EC6', '#FB88B4', '#FF9494', '#FFA62F', '#ED9455', '#ED008C',
+    '#FF86C8', '#AF3E3E', '#DC2525', '#C84034', '#F74C06', '#BF0000',
+    '#AC4459', '#990F4B', '#D44527', '#450000'
+  ],
+
+  'blue': [
+    '#0000ff', '#2962ff', '#304ffe', '#3d5afe', '#1a237e', '#2196f3',
+    '#bbdefb', '#e3f2fd', '#4793AF', '#16CCA4', '#79CDB8', '#00B4D8',
+    '#009FD9', '#008DDA', '#00b4d8', '#90e0ef', '#3674B5', '#075B5E',
+    '#2CA6A0', '#4ED7F1', '#A8F1FF', '#B7E0FF', '#68D2E8', '#A0DEFF',
+    '#86A7FC', '#7AA2E3', '#5AB2FF', '#365E32', '#5C2FC2', '#030637',
+    '#0F1C52', '#344955', '#27374D', '#092635', '#00224D', '#1B4D3E',
+    '#68D2E8', '#03AED2', '#A1EEBD', '#73C7C7', '#05B2DC', '#91ADE1',
+    '#9BC09C', '#156064', '#4DB3D3', '#57CCA8', '#6EACDA', '#7BD3EA',
+    '#5C88C4', '#5893D4', '#4D80E6', '#4464AD', '#81BFDA', '#3DC2EC'
+  ],
+
+  'green': [
+    '#00ff00', '#00c853', '#00e676', '#69f0ae', '#b9f6ca', '#A4B465',
+    '#4B352A', '#B6F500', '#A4DD00', '#5D8736', '#809D3C', '#A9C46C',
+    '#F4FFC3', '#88D66C', '#15B392', '#7ABA78', '#81A263', '#6FDCE3',
+    '#347433', '#97BE5A', '#40A578', '#9DDE8B', '#C1DBB3', '#708A58',
+    '#2D4F2B', '#537D5D', '#73946B', '#010936', '#465362', '#2B580C',
+    '#5CB338', '#387F39', '#4F6F52', '#416D19', '#0B192C', '#1F4529',
+    '#47663B', '#2C7865', '#99BC85', '#74C69D', '#3E4659', '#3B4F3E',
+    '#95D5B2', '#337357', '#90D26D', '#8F1616', '#68C3A3', '#80FF72',
+    '#07C8A1', '#78A083', '#9EC8B9', '#A1EEBD', '#7ABA78', '#005B41',
+    '#317773'
+  ],
+
+  'yellow': [
+    '#ffff00', '#F3C623', '#FCF259', '#FFF085', '#FFB22C', '#FFE893',
+    '#FAD59A', '#FCEFCB', '#F5F0CD', '#F2C078', '#F6EACB', '#F6FDC3',
+    '#FDFCDC', '#FFEC9E', '#FFF8DC', '#FDDE55', '#FF9B17', '#FFDB5C',
+    '#FFEEA9', '#F9CB43', '#FFD63A', '#FFD23F', '#FEFAE0', '#FFFBE6',
+    '#FADA7A', '#FEF3E2', '#FFF67E', '#BFEA7C', '#F5E8C7', '#FCFAEE',
+    '#F8E1B7', '#F7EEDD', '#F6EFBD', '#FAF1E6', '#F6F7C4', '#F4F8D3',
+    '#F5F5DC', '#FFFDB5', '#FDE7BB', '#F4E285', '#F6F193', '#FFFED3',
+    '#FFF3CF', '#FEF9D9', '#FFFAE5', '#FFFBDA', '#FFFFEC', '#F6E96B',
+    '#F3CA52', '#FCF596', '#FCE7C8', '#F8F2DE', '#FAEDCA', '#FCFDCB',
+    '#F4FFC3', '#FFE8C5', '#FFE8C8', '#FFFBE6', '#FFFBEB', '#FFFBDB',
+    '#FEF9FC', '#FFF0F5'
+  ],
+
+  'purple': [
+    '#9c27b0', '#7b1fa2', '#6a1b9a', '#4a148c', '#e1bee7', '#AB4459',
+    '#441752', '#1B1833', '#6B387A', '#D57AAA', '#F487B6', '#4F1C51',
+    '#491D52', '#735557', '#333366', '#5E1675', '#522546', '#432E54',
+    '#4B4376', '#1A1A1D', '#3B1C32', '#6A1E55', '#A64D79', '#522258',
+    '#8C3061', '#C63C51', '#D95F59', '#32012F', '#524C42', '#2E073F',
+    '#7A1ACF', '#913175', '#D416D9', '#642F4F', '#853985', '#AF3FE4',
+    '#440154', '#FBC4AB', '#FFD1DF', '#FEAEE5', '#FB9EC6', '#F487B6',
+    '#DE7C7D', '#E68888', '#FC8F54', '#F6B5FE', '#EDB7ED', '#E7D5FF',
+    '#DDB4F9', '#D59EFB', '#C893F9', '#B47AE6', '#9F58D6', '#8A42C1'
+  ],
+
+  'orange': [
+    '#ff9800', '#fb8c00', '#f57c00', '#ffa726', '#ffe0b2', '#FFBF78',
+    '#FFEEA9', '#EB5A3C', '#DF9755', '#E7D283', '#EDF4C2', '#FFD23F',
+    '#FF9D23', '#E5D0AC', '#FEF9E1', '#FFAD60', '#FFEEAD', '#FFAF61',
+    '#FFE700', '#F4A261', '#E76F51', '#FF9843', '#FFDD95', '#FFB996',
+    '#FFCF81', '#FDFFAB', '#F0A04B', '#FC9A01', '#FFB200', '#FFCD4B',
+    '#FF9D3D', '#FFB469', '#FFA955', '#F57920', '#FF8300', '#FF9147',
+    '#FFA500', '#FF8F00', '#FF7700', '#FF6D00', '#FF5A00', '#FF4700',
+    '#FF3D00', '#E65100', '#BF360C', '#DD2C00', '#D84315', '#F4511E',
+    '#FF7043', '#FF8A65', '#FFAB91', '#FFCCBC', '#F3E5F5', '#FFE0B2'
+  ],
+
+  'pink': [
+    '#e91e63', '#c2185b', '#f06292', '#f8bbd0', '#fce4ec', '#E82561',
+    '#F564A9', '#F487B6', '#F9CEEB', '#F2C2E8', '#EF88AD', '#FAA4BD',
+    '#FF76CE', '#FB88B4', '#FF94C9', '#FFA6D9', '#FFB8E9', '#FFCAF9',
+    '#FF52E5', '#EB3678', '#AF1740', '#D91656', '#F05941', '#FF8383',
+    '#F95B25', '#F77645', '#F8532B', '#EF5350', '#EF9A9A', '#F48FB1',
+    '#F06292', '#EC407A', '#E91E63', '#D81B60', '#C2185B', '#AD1457',
+    '#880E4F', '#F8BBD0', '#F48FB1', '#F06292', '#EC407A', '#E91E63'
+  ],
+  'brown': [
+    '#7B4019', '#4B352A', '#A86523', '#BE5B50', '#8A2D3B', '#641B2E',
+    '#5E3023', '#895737', '#754E1A', '#CBA35C', '#D29F80', '#C27664',
+    '#8D0B41', '#543A14', '#3A0519', '#210F37', '#1D1616', '#131010',
+    '#4E1F00', '#74512D', '#6D2323', '#3D0301', '#2A2438', '#472D2D'
+  ],'gray': [
+    '#9e9e9e', '#bdbdbd', '#e0e0e0', '#f5f5f5', '#eeeeee', '#D6D6D6',
+    '#757575', '#616161', '#424242', '#212121', '#333333', '#555555',
+    '#777777', '#999999', '#BBBBBB', '#DDDDDD', '#F9F9F9', '#E0E0E0',
+    '#ECECEC', '#F2F2F2', '#F7F7F7', '#FAFAFA', '#EFEFEF', '#E5E5E5',
+    '#DBDBDB', '#D1D1D1', '#C7C7C7', '#BCBCBC', '#B2B2B2', '#A8A8A8',
+    '#8A8A8A', '#808080', '#6C6C6C', '#585858', '#444444', '#303030'
+  ],
+  // Special Categories
+  'teal': [
+    '#00796b', '#009688', '#4db6ac', '#80cbc4', '#b2dfdb', '#03A6A1',
+    '#2CA6A0', '#57A6A1', '#15B392', '#03A791', '#68C3A3', '#07C8A1',
+    '#317773', '#156064', '#4464AD', '#4DB3D3', '#57CCA8', '#5893D4'
+  ],
+  'cyan': [
+    '#00bcd4', '#00acc1', '#0097a7', '#00838f', '#00695c', '#4ED7F1',
+      '#6FE6FC', '#68D2E8', '#03AED2', '#05B2DC', '#91ADE1', '#9EC8B9',
+    '#80CBC4', '#B4EBE6', '#ACE2E1', '#7BD3EA', '#5AB2FF', '#A0DEFF'
+  ],
+  'magenta': [
+    '#f06292', '#ec407a', '#e91e63', '#d81b60', '#c2185b', '#ad1457',
+    '#880E4F', '#F8BBD0', '#F48FB1', '#F06292', '#EC407A', '#E91E63',
+    '#D91656', '#AF1740', '#CC2B52', '#DE7C7D', '#FB4141', '#FF6969'
+  ],
+  'lime': [
+    '#aeea00', '#c6ff00', '#a4dd00', '#98CD00', '#B6F500', '#F4FFC3',
+    '#E8FFD8', '#E0F6B2', '#D9EDBF', '#C5EBAA', '#A5DD9B', '#9EDF9C',
+    '#88D66C', '#73EC8B', '#54C392', '#7ABA78', '#81A263', '#90D26D'
+  ],
+  // Earth Tones
+  'earth': [
+    '#7B4019',  '#5E3023', '#895737', '#A86523', '#754E1A',
+    '#CBA35C', '#D29F80', '#C27664', '#8D0B41', '#543A14', '#3A0519',
+    '#210F37', '#1D1616', '#131010', '#4E1F00', '#74512D', '#6D2323'
+  ],
+  // Pastels
+  'pastel': [
+    '#f8edeb', '#eac4d5', '#d8e2dc', '#ffe5ec', '#f7d9d9', '#e2c2c6',
+    '#cdb4db', '#ffc8dd', '#ffd6a5', '#fdffb6', '#caffbf', '#9bf6ff',
+    '#b5ead7', '#c7ceea', '#ffdac1', '#ffb7b2', '#f6e2b3', '#f9d5d3'
+  ],
+  // Metallics
+  'metallic': [
+    '#D6BD98', '#E8C999', '#F0BB78', '#E9C46A', '#F4A261', '#E76F51',
+    '#C69749', '#735F32', '#B99470', '#D39D55', '#E07B39', '#ED9455',
+    '#F2AE66', '#F2C18D', '#F5DAD2', '#ECCA9C', '#E5DDC5', '#DBA979'
+  ],
+  // Jewel Tones
+  'jewel': [
+    '#090040', '#471396'],
+
+  'neutrals': [
+    '#000000', '#FFFFFF', '#F8F4E1', '#F5F5DC', '#F6F7C4', '#F6EACB',
+    '#F6FDC3', '#FDFCDC', '#FFEC9E', '#FFF8DC', '#FEFAE0', '#FFFBE6',
+    '#FCFAEE', '#F8F2DE', '#FAF1E6', '#F6F7C4', '#F4F8D3', '#F5F5DC',
+    '#FFFDB5', '#FCFDCB', '#F8FAE5', '#F6F1E9', '#F8F6E3', '#F5F5F5',
+    '#D6D6D6', '#BDBDBD', '#9E9E9E', '#757575', '#616161', '#424242',
+    '#212121', '#333333', '#555555', '#777777', '#999999', '#BBBBBB',
+    '#DDDDDD', '#EEEEEE', '#F9F9F9', '#E0E0E0', '#E6E6E6', '#ECECEC',
+    '#F2F2F2', '#F7F7F7', '#FAFAFA', '#FCFCFC', '#EFEFEF', '#E5E5E5',
+    '#DBDBDB', '#D1D1D1', '#C7C7C7', '#BCBCBC', '#B2B2B2', '#A8A8A8',
+    '#9E9E9E', '#949494', '#8A8A8A', '#808080', '#767676', '#6C6C6C',
+    '#626262', '#585858', '#4E4E4E', '#444444', '#3A3A3A', '#303030',
+    '#262626', '#1C1C1C', '#121212', '#080808', '#000000'
+  ]
+};
 
 
 const colorData = {
@@ -873,7 +1042,8 @@ const colorData = {
     4: { name: "Vintage" },
     5: { name: "Pastel" },
     6: { name: "Summer" },
-    7: { name: "Cold" }
+    7: { name: "Cold" },
+    8: { name:"retro" }
   },
   Palettes: {
     "warm-001": { colors: ["#7B4019", "#FF7D29", "#FFBF78", "#FFEEA9"], category_id: 1 },
@@ -1160,7 +1330,34 @@ const colorData = {
     "cold-049": { colors: ["#000000","#3D0000","#950101","#FF0000"], category_id: 7 },
     "cold-050": { colors: ["#420516","#7D1935","#B42B51","#E63E6D"], category_id: 7 },
     "cold-051": { colors: ["#DBD8E3","#5C5470","#352F44","#2A2438"], category_id: 7 },
-    "cold-052": { colors: ["#000000","#3E432E","#616F39","#A7D129"], category_id: 7 }
+    "cold-052": { colors: ["#000000","#3E432E","#616F39","#A7D129"], category_id: 7 },
+
+
+    "retro-001": { colors: ["#03A6A1", "#F9D6AC", "#F7B088", "#F95B25"], category_id: 8 },
+    "retro-002": { colors: ["#3B6E30", "#F6C900", "#F78727", "#C84034"], category_id: 8 },
+    "retro-003": { colors: ["#0F1C52", "#6A4E9E", "#93B7D7", "#F3D9A5"], category_id: 8 },
+    "retro-004": { colors: ["#0F1C52", "#5B4EA1", "#B6A983", "#DAC48D"], category_id: 8 },
+    "retro-005": { colors: ["#EC9367", "#1C3545", "#BEC3C4", "#E0D9D3"], category_id: 8 },
+    "retro-006": { colors: ["#FDF4C3", "#7FF2CC", "#E48BD0", "#ED008C"], category_id: 8 },
+    "retro-007": { colors: ["#369499", "#FC9A01", "#F74C06", "#BF0000"], category_id: 8 },
+    "retro-008": { colors: ["#B13805", "#F3B756", "#73867B", "#B6C3AC"], category_id: 8 },
+    "retro-009": { colors: ["#F77645", "#F2ECE5", "#253845", "#000000"], category_id: 8 },
+    "retro-010": { colors: ["#000000", "#262626", "#16CCA4", "#79CDB8"], category_id: 8 },
+    "retro-011": { colors: ["#F1E4E5", "#DA9CAF", "#FEDAB5", "#FFFDC5"], category_id: 8 },
+    "retro-012": { colors: ["#3A6D4A", "#F2F1F0", "#F49853", "#D44527"], category_id: 8 },
+    "retro-013": { colors: ["#DEE79A", "#9AB378", "#284666", "#D34A00"], category_id: 8 },
+    "retro-014": { colors: ["#89D3D2", "#2CA6A0", "#E5D7CD", "#F8F0E6"], category_id: 8 },
+    "retro-015": { colors: ["#002F8C", "#0573A5", "#FDC97F", "#FEE5C1"], category_id: 8 },
+    "retro-016": { colors: ["#FFA902", "#FA591B", "#BE1C3E", "#901A4C"], category_id: 8 },
+    "retro-017": { colors: ["#F7F3E8", "#5E795F", "#C0D3B5", "#E78228"], category_id: 8 },
+    "retro-018": { colors: ["#600013", "#F5B1A4", "#8F8365", "#4A5C4D"], category_id: 8 },
+    "retro-019": { colors: ["#583BA5", "#9B7FDD", "#E0F6B2", "#E8FFD8"], category_id: 8 },
+    "retro-020": { colors: ["#AAC1AB", "#B6D5BA", "#B9A5C4", "#625E7D"], category_id: 8 },
+    "retro-021": { colors: ["#6A836F", "#F4F4E8", "#C48145", "#AE512E"], category_id: 8 },
+    "retro-022": { colors: ["#6B387A", "#D57AAA", "#F4D7AC", "#F3EAD8"], category_id: 8},
+    "retro-023": { colors: ["#F9C62D", "#F57920", "#E43C64", "#AA1455"], category_id: 8},
+    "retro-024": { colors: ["#F9CCE1", "#009FD9", "#064F6E", "#132229"], category_id: 8}
+
   },
   categoryPalettes: {
     1: [
@@ -1212,8 +1409,12 @@ const colorData = {
       "cold-033", "cold-034", "cold-035", "cold-036", "cold-037", "cold-038", "cold-039", "cold-040",
       "cold-041", "cold-042", "cold-043", "cold-044", "cold-045", "cold-046", "cold-047", "cold-048",
       "cold-049", "cold-050", "cold-051", "cold-052"
+    ],
+    8:["retro-001","retro-002","retro-003","retro-004","retro-005","retro-006","retro-007","retro-008","retro-009","retro-010","retro-011","retro-012","retro-013","retro-014","retro-015","retro-016","retro-017","retro-018","retro-019","retro-020","retro-021","retro-023","retro-024"
+
     ]
-  }
+  },
+  colorNames: colorNames
 };
 
 export default colorData;

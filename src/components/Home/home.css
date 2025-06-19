@@ -9,7 +9,7 @@
   animation: fadeIn 1s ease-in;
   /* background: #FF8B4E;
   background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%); */
-  background: #f3f4f6;
+  /* background: #f3f4f6; */
 }
 .ImgHeading{
   display: flex;
@@ -26,11 +26,12 @@
 }
 
 .mainHeading {
-  font-size: 70px;
+  font-size: 100px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #333;
   color: rgba(255, 3, 105, 1);
+  margin-right: 40px;
 }
 
 .subText {
@@ -80,14 +81,14 @@
 /* Services Section */
 .servicesSection {
   padding: 60px 20px;
-  background: #f3f4f6;
+  /* background: #f3f4f6; */
   text-align: center;
 }
 
 .servicesHeading {
   font-size: 36px;
   margin-bottom: 30px;
-  color: #333;
+  color: #FF8B4E;
 }
 
 .servicesList {
@@ -119,7 +120,9 @@
   color:white;
 }
 .HeroImg {
-  border-radius: 100px;
+  margin-left: 20px;
+
+  border-radius:  1px 120px;
   border: 2px solid rgb(255, 255, 255);
   
 }

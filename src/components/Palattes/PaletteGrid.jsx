@@ -1,103 +1,63 @@
-// import { useState } from 'react';
-// import palettesData from './Data/colorPalettes';
-// import './PaletteGrid.css';
 
-// const PaletteGrid = () => {
-//   const [selectedCategory, setSelectedCategory] = useState(null);
-
-//   // Toggle category selection
-//   const handleCategoryClick = (category) => {
-//     const newCategory = category === selectedCategory ? null : category;
-//     setSelectedCategory(newCategory);
-
-//     if (newCategory) {
-//       const themeData = palettesData.find((item) => item.category === newCategory);
-//       if (themeData) {
-//         console.log(`Palettes for ${newCategory}:`, themeData.palettes);
-//       }
-//     } else {
-//       console.log('Showing all palettes');
-//     }
-//   };
-
-//   // If a category is selected, use its palettes, otherwise show all
-//   const palettesToShow = selectedCategory
-//     ? palettesData.find((item) => item.category === selectedCategory)?.palettes || []
-//     : palettesData.flatMap((item) => item.palettes);
-
-//   return (
-//     <div className="paletteGridContainer">
-//       {/* Category Buttons */}
-//       <div className="categoryButtons">
-//         {palettesData.map((item) => (
-//           <button
-//             key={item.category}
-//             onClick={() => handleCategoryClick(item.category)}
-//             className={`categoryButton ${
-//               selectedCategory === item.category ? 'active' : ''
-//             }`}
-//           >
-//             {item.category}
-//           </button>
-//         ))}
-//       </div>
-
-//       {/* Palette Display */}
-//       <div className="paletteList">
-//         {palettesToShow.length > 0 ? (
-//           palettesToShow.map((palette) => (
-//             <div key={palette.id} className="paletteBox">
-//               {palette.colors.map((color, i) => (
-//                 <div
-//                   key={i}
-//                   className="colorBlockContainer"
-//                   onClick={() => navigator.clipboard.writeText(color)}
-//                   title="Click to copy"
-//                 >
-//                   <div
-//                     className="colorBlock"
-//                     style={{ backgroundColor: color }}
-//                   ></div>
-//                   <span className="hexTooltip">{color}</span>
-//                 </div>
-//               ))}
-//             </div>
-//           ))
-//         ) : (
-//           <p>No palettes found.</p>
-//         )}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default PaletteGrid;
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import colorData from './Data/colorPalettes'; // Updated import to match new structure
 import './PaletteGrid.css';
 
 const PaletteGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [palettesToShow, setPalettesToShow] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const observer = useRef();
+
+  // Load palettes based on selected category and current page
+  const loadPalettes = () => {
+    setLoading(true);
+    const palettes = selectedCategory
+      ? colorData.categoryPalettes[selectedCategory].map(paletteId => colorData.Palettes[paletteId])
+      : Object.values(colorData.Palettes);
+
+    const newPalettes = palettes.slice(0, page * 10); // Load 10 palettes per page
+    setPalettesToShow(newPalettes);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    loadPalettes();
+  }, [selectedCategory, page]);
 
   // Toggle category selection
   const handleCategoryClick = (category) => {
     const newCategory = category === selectedCategory ? null : category;
     setSelectedCategory(newCategory);
-
-    if (newCategory) {
-      const themeData = colorData.categories[newCategory];
-      if (themeData) {
-        console.log(`Palettes for ${themeData.name}:`, colorData.categoryPalettes[newCategory]);
-      }
-    } else {
-      console.log('Showing all palettes');
-    }
+    setPage(1); // Reset to first page when category changes
   };
 
-  // If a category is selected, use its palettes, otherwise show all
-  const palettesToShow = selectedCategory
-    ? colorData.categoryPalettes[selectedCategory].map(paletteId => colorData.Palettes[paletteId])
-    : Object.values(colorData.Palettes);
+  // Intersection Observer to detect when to load more palettes
+  const lastPaletteRef = useRef();
+  useEffect(() => {
+    const observerCallback = (entries) => {
+      if (entries[0].isIntersecting && !loading) {
+        setPage((prevPage) => prevPage + 1);
+      }
+    };
+
+    const currentObserver = observer.current;
+    if (currentObserver) {
+      currentObserver.disconnect();
+    }
+
+    observer.current = new IntersectionObserver(observerCallback);
+    if (lastPaletteRef.current) {
+      observer.current.observe(lastPaletteRef.current);
+    }
+
+    return () => {
+      if (currentObserver) {
+        currentObserver.disconnect();
+      }
+    };
+  }, [loading, palettesToShow]);
 
   return (
     <div className="paletteGridContainer">
@@ -120,7 +80,11 @@ const PaletteGrid = () => {
       <div className="paletteList">
         {palettesToShow.length > 0 ? (
           palettesToShow.map((palette, index) => (
-            <div key={index} className="paletteBox">
+            <div
+              key={index}
+              className="paletteBox"
+              ref={index === palettesToShow.length - 1 ? lastPaletteRef : null}
+            >
               {palette.colors.map((color, i) => (
                 <div
                   key={i}
@@ -140,6 +104,7 @@ const PaletteGrid = () => {
         ) : (
           <p>No palettes found.</p>
         )}
+        {loading && <p>Loading more palettes...</p>}
       </div>
     </div>
   );

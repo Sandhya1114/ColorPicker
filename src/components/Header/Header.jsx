@@ -1,4 +1,4 @@
-// Header.jsx
+
 import './Header.css';
 import { Link,useNavigate } from 'react-router-dom';
 
@@ -8,10 +8,11 @@ export default function Header({ history }) {
   return (
     <header className="header">
       <div className="headerContainer">
-        <div className="logo">Color Picker</div>
+        <div className="logo">Color Palettes</div>
         <nav className="navLinks">
           <Link to="/">Home</Link>
           <Link to="/upload">Upload</Link>
+          <Link to="/Palettes">Explore Palettes</Link>
           <a href="#">Tools</a>
           <a href="#">Sign In</a>
           {history.length > 0 && (

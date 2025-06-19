@@ -41,6 +41,9 @@
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
     padding: 10px;
     display: flex;
+    color: white;
+    background-color: #dedbdb9e;
+
 }
 
 /* Thumbnail Image */
@@ -69,12 +72,13 @@
     height: 35px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(40deg, #ff6ec4, #7873f5);
+   background: #FF8B4E;
+    background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%);
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .colorSwatch {

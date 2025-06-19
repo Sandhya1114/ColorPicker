@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+ 
+  background-color: #070707;
+
+}
