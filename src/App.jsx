@@ -54,11 +54,12 @@ function App() {
           <Route path="/upload" element={<HomeWrapper history={history} setHistory={setHistory} />}/>
           <Route path='/palettes' element={<ColorPaletteSearch colorData={colorData} />}/>
           <Route path="/history" element={<HistoryPage history={history} />} />
+          <Route path="/picker" element={<ColorPickerButton/> } />
         </Routes>
       
       </div>
        </Router>
-      <ColorPickerButton/>
+      
     </>
    
   );
@@ -66,3 +67,8 @@ function App() {
 
 export default App;
 
+// #000000
+// #000001
+// #000002
+// ...F
+// 00...FF

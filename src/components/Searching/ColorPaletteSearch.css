@@ -24,6 +24,7 @@
 }
 
 .search-section input {
+  background-color: #ffffff2e;
   padding: 10px 15px;
   flex-grow: 1;
   border: 1px solid #ddd;

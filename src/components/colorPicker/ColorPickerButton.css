@@ -1,0 +1,147 @@
+/* Button selection styles for the color modes */
+.color-mode {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+/* Individual color mode button */
+.color-mode input {
+    margin-right: 8px;
+}
+/* HSL color space indicator */
+.color-slider {
+    height: 200px; /* Height of the color gradient slider */
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    border-radius: 4px;
+}
+/* Selected color text */
+.selected-color {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+/* Style the slider */
+.slider {
+    -webkit-appearance: none;
+     appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+.slider:hover {
+    opacity: 1;
+}
+
+.color-display div {
+    position: relative;
+    transition: transform 0.3s;
+}
+.color-display div:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+.pickerAndColor{
+    display: flex;
+}
+.selected-color button{
+    margin-left: 10px;
+    padding: 12px 14px;
+    font-size: 10px;
+    /* background: linear-gradient(120deg, #ff6ec4, #7873f5); */
+    background: #FF8B4E;
+    background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+
+}
+.mode-selector label{
+ color: white;
+ font-size: 20px;
+ 
+}
+.mode-selecto{
+    margin: 2px 20px;
+}
+.react-colorful {
+   width: 337px;
+    height: 305px;
+}
+.react-colorful__last-control {
+    /* position: relative; */
+    height: 7px;
+    /* margin-top: 20px; */
+}
+ .react-colorful__hue {
+    position: relative;
+    height: 7px;
+}
+.react-colorful__alpha, .react-colorful__hue {
+    position: relative;
+    height: 7px;
+}
+.react-colorful__alpha, 
+.react-colorful__hue {
+    position: relative;
+    height: 7px; /* Changed from 24px to 7px */
+}
+.color-picker-container h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.color-picker-container p{
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pickerAndColor {
+    /* Additional styles as needed */
+}
+
+.color-picker-dropdown {
+    margin-left: 15vw;
+    /* Styles for the dropdown section */
+}
+
+.mode-selector {
+    /* Styles for the mode selector */
+}
+
+.selected-color {
+    /* Styles for the selected color display */
+    margin-top: 20px;
+}
+
+.color-display {
+    display: flex;
+    margin-top: 10px;
+}
+
+.color-variation {
+    height: 300px;
+    width: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hovered-color-label {
+    position: absolute;
+    /* bottom: 0; */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    padding: 5px;
+    top: 305px;
+}

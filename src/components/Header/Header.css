@@ -30,11 +30,12 @@
   margin-left: 10px;
   border-radius: 6px;
   transition: background 0.2s ease;
+  position: relative;
 }
-
-.navLinks a:hover {
+/* 
+.navLinks a:active {
   background-color: rgba(255, 255, 255, 0.2);
-}
+} */
 .headerSearchInput {
   margin-left: 16px;
   padding: 6px 12px;
@@ -43,3 +44,8 @@
   font-size: 1rem;
   width: 220px;
 }
+
+
+
+
+
