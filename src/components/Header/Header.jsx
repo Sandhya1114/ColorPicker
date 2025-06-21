@@ -12,7 +12,7 @@ export default function Header({ history }) {
         <div className="logo">Color Palettes</div>
         <nav className="navLinks">
           <Link to="/">Home</Link>
-          <Link to="/upload">Upload</Link>
+          <Link to="/upload">Palette Generator</Link>
           <Link to="/Palettes">Explore Palettes</Link>
           <CustomDropdown />
           <a href="#">Sign In</a>

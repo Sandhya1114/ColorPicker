@@ -69,6 +69,19 @@ button:focus-visible {
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
  
-  background-color: #070707;
-
+  /* background-color: #070707; */
+   /* background: #E5EAE3;
+    /* background: linear-gradient(80deg, rgba(229, 234, 227, 1) 0%, rgba(124, 147, 129, 1) 52%, rgba(64, 85, 70, 1) 100%); */
+    background: #ffffff;
+    background: linear-gradient(80deg, rgba(255, 255, 255, 1) 0%, rgba(124, 147, 129, 1) 52%, rgba(64, 85, 70, 1) 100%); 
+/* background: #ffffff;
+background: linear-gradient(80deg, rgba(255, 255, 255, 1) 0%, rgba(132, 186, 162, 1) 52%); */
+/* background: #F2F2EA;
+background: linear-gradient(80deg, rgba(242, 242, 234, 1) 0%, rgba(215, 215, 196, 1) 20%, rgba(132, 186, 162, 1) 52%); */
+/* background: #FA92A0;
+background: linear-gradient(80deg, rgba(250, 146, 160, 1) 1%, rgba(217, 234, 229, 1) 40%, rgba(177, 199, 189, 1) 97%); */
+/* background: #FA92A0;
+background: linear-gradient(80deg, rgba(250, 146, 160, 1) 1%, rgba(220, 234, 219, 1) 40%, rgba(190, 204, 186, 1) 97%); */
+/* background: #e8eed5;
+background: linear-gradient(80deg, rgba(232, 238, 213, 1) 1%, rgba(213, 199, 178, 1) 40%, rgba(46, 219, 184, 1) 97%); */
 }

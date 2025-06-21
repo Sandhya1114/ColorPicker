@@ -12,7 +12,7 @@ const CustomDropdown = () => {
    
     { title: 'Explore Palettes', description: 'Browse millions of trending color schemes' ,link:'/Palettes'},
     { title: 'Image Picker', description: 'Get beautiful palettes from your photos', link:'/picker'},
-    { title: 'Contrast Checker', description: 'Check the contrast between two colors',link:'' },
+    { title: 'Gradient Maker', description: 'Make gradient that you want',link:'/gradient'},
     { title: 'Palette Visualizer', description: 'Preview your colors on real designs',link:''},
   ];
   return (

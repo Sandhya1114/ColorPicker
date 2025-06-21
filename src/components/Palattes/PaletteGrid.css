@@ -24,11 +24,11 @@
     
 
 .categoryButton:hover {
-  background-color: #FF0369;
+  background-color: #0f0f0f;
 }
 
 .categoryButton.active {
-  background-color: #FF0369;
+  background-color: #0c0c0c;
   color: #fff;
 }
 

@@ -1,0 +1,91 @@
+.gm-container {
+  font-family: Arial, sans-serif;
+  width:70vw;
+  margin: 50px auto;
+  padding: 1rem;
+  background-color: #090909;
+  border-radius: 10px;
+}
+
+.gm-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.gm-toggle button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #888;
+  background: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #44594A;
+}
+
+.gm-toggle button.active {
+  background: #44594A;
+  color: white;
+  border-color: #fcfcfc;
+}
+
+.gm-angle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.gm-preview {
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.gm-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gm-stop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+span {
+    color: #fafefb;
+}
+
+.gm-css {
+  width:96%;
+  font-family: monospace;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 4px;
+  resize: none;
+  color: #ddd;
+  background-color: #44594A;
+}
+
+input[type='range']{
+    accent-color: #44594A;
+}
+
+input[type='color']{
+    background: #fff;
+}
+.gradient h1{
+  text-align: center;
+    color: white;
+    font-size: 48px;
+}
+.gradient p{
+  text-align: center;
+    color: rgb(231, 229, 229);
+   
+}

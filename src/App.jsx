@@ -28,6 +28,7 @@ import HistoryPage from './components/History/HistoryPage';
 import ColorPaletteSearch from './components/Searching/ColorPaletteSearch';
 import colorData from './components/Palattes/Data/colorPalettes';
 import ColorPickerButton from './components/colorPicker/ColorPicker';
+import GradientMaker from './components/GradientMaker/GradientMaker';
 
 function HomeWrapper({ history, setHistory }) {
   const location = useLocation();
@@ -55,6 +56,8 @@ function App() {
           <Route path='/palettes' element={<ColorPaletteSearch colorData={colorData} />}/>
           <Route path="/history" element={<HistoryPage history={history} />} />
           <Route path="/picker" element={<ColorPickerButton/> } />
+          <Route path="/gradient" element={<GradientMaker/> } />
+          
         </Routes>
       
       </div>

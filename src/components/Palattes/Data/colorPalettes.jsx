@@ -1043,7 +1043,7 @@ const colorData = {
     5: { name: "Pastel" },
     6: { name: "Summer" },
     7: { name: "Cold" },
-    8: { name:"retro" }
+    8: { name:"Retro" }
   },
   Palettes: {
     "warm-001": { colors: ["#7B4019", "#FF7D29", "#FFBF78", "#FFEEA9"], category_id: 1 },
