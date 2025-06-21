@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import './ColorPaletteSearch.css';
 import colorData from '../Palattes/Data/colorPalettes';
+import Footer from '../Footer/Footer';
 
 const ColorPaletteSearch = ({ colorData }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -94,63 +95,68 @@ const ColorPaletteSearch = ({ colorData }) => {
   };
 
   return (
-    <div className="color-palette-search">
-      <h1>Search Here All Cool Palettes</h1>
-      <p>Color is the element of the visual world that has the greatest impact on our emotions</p>
-      
-      <form onSubmit={handleSearch} className="search-controls">
-        <div className="search-section">
-          <input
-            type="text"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search by color name or hex code..."
-            aria-label="Search color palettes"
-          />
-          <button type="submit" disabled={isLoading}>
-            {isLoading ? 'Searching...' : 'Search'}
-          </button>
-        </div>
-      </form>
+    <>
+      <div className="color-palette-search">
+        <h1>Search Here All Cool Palettes</h1>
+        <p>Color is the element of the visual world that has the greatest impact on our emotions</p>
+        
+        <form onSubmit={handleSearch} className="search-controls">
+          <div className="search-section">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search by color name or hex code..."
+              aria-label="Search color palettes"
+            />
+            <button type="submit" disabled={isLoading}>
+              {isLoading ? 'Searching...' : 'Search'}
+            </button>
+          </div>
+        </form>
 
-      {isLoading ? (
-        <div className="loading-indicator">Loading...</div>
-      ) : (
-        <div className="results-grid">
-          {palettes.length > 0 ? (
-            palettes.map((palette) => (
-              <div key={palette.id} className="palette-card">
-                <div className="palette-colors">
-                  {palette.colors.map((color, index) => (
-                    <div
-                      key={index}
-                      className="color-box"
-                      style={{ backgroundColor: color }}
-                      title={color}
-                      aria-label={`Color ${color}`}
-                      onClick={() => copyToClipboard(color)}
-                      onMouseEnter={() => setTooltip({ visible: true, color })}
-                      onMouseLeave={() => setTooltip({ visible: false, color: '' })}
-                    >
-                      <div className={`hexTooltip ${tooltip.visible && tooltip.color === color ? 'visible' : ''}`}>
-                        {color}
+        {isLoading ? (
+          <div className="loading-indicator">Loading...</div>
+        ) : (
+          <div className="results-grid">
+            {palettes.length > 0 ? (
+              palettes.map((palette) => (
+                <div key={palette.id} className="palette-card">
+                  <div className="palette-colors">
+                    {palette.colors.map((color, index) => (
+                      <div
+                        key={index}
+                        className="color-box"
+                        style={{ backgroundColor: color }}
+                        title={color}
+                        aria-label={`Color ${color}`}
+                        onClick={() => copyToClipboard(color)}
+                        onMouseEnter={() => setTooltip({ visible: true, color })}
+                        onMouseLeave={() => setTooltip({ visible: false, color: '' })}
+                      >
+                        <div className={`hexTooltip ${tooltip.visible && tooltip.color === color ? 'visible' : ''}`}>
+                          {color}
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                  {/* <div className="palette-info">
+                    <p className="palette-category">{palette.category}</p>
+                  </div> */}
                 </div>
-                {/* <div className="palette-info">
-                  <p className="palette-category">{palette.category}</p>
-                </div> */}
-              </div>
-            ))
-          ) : (
-            <p className="no-results">
-              {searchQuery ? `No palettes found for "${searchQuery}"` : 'No palettes found'}
-            </p>
-          )}
-        </div>
-      )}
-    </div>
+              ))
+            ) : (
+              <p className="no-results">
+                {searchQuery ? `No palettes found for "${searchQuery}"` : 'No palettes found'}
+              </p>
+            )}
+          </div>
+        )}
+        
+      </div>
+      <Footer/>
+    </>
+    
   );
 };
 

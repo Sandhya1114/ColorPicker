@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './HistoryPage.css';
+import Footer from '../Footer/Footer';
 
 function rgbToHex(r, g, b) {
   return (
@@ -21,7 +22,8 @@ export default function HistoryPage({ history }) {
   };
 
   return (
-    <div className="historyPageContainer">
+    <>
+       <div className="historyPageContainer">
       <button className="backBtn" onClick={() => navigate(-1)}>← Back</button>
       <h2>Image History</h2>
       {history.length === 0 ? (
@@ -43,6 +45,9 @@ export default function HistoryPage({ history }) {
           ))}
         </div>
       )}
-    </div>
+       </div>
+       <Footer/>
+    </>
+    
   );
 }

@@ -118,7 +118,8 @@
 // };
 
 // export default ColorPickerButton;
-import React, { useState } from "react";
+import { useState } from "react";
+import Footer from '../Footer/Footer';
 import {
     HexColorPicker,
     RgbColorPicker,
@@ -239,6 +240,7 @@ const adjustColorBrightness = (hex, percent) => {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 };

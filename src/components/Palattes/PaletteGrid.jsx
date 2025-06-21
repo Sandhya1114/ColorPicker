@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import colorData from './Data/colorPalettes'; // Updated import to match new structure
 import './PaletteGrid.css';
+import Footer from '../Footer/Footer';
 
 const PaletteGrid = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -60,53 +61,58 @@ const PaletteGrid = () => {
   }, [loading, palettesToShow]);
 
   return (
-    <div className="paletteGridContainer">
-      {/* Category Buttons */}
-      <div className="categoryButtons">
-        {Object.entries(colorData.categories).map(([id, category]) => (
-          <button
-            key={id}
-            onClick={() => handleCategoryClick(Number(id))}
-            className={`categoryButton ${
-              selectedCategory === Number(id) ? 'active' : ''
-            }`}
-          >
-            {category.name}
-          </button>
-        ))}
-      </div>
-
-      {/* Palette Display */}
-      <div className="paletteList">
-        {palettesToShow.length > 0 ? (
-          palettesToShow.map((palette, index) => (
-            <div
-              key={index}
-              className="paletteBox"
-              ref={index === palettesToShow.length - 1 ? lastPaletteRef : null}
+    <>
+        <div className="paletteGridContainer">
+        {/* Category Buttons */}
+        <div className="categoryButtons">
+          {Object.entries(colorData.categories).map(([id, category]) => (
+            <button
+              key={id}
+              onClick={() => handleCategoryClick(Number(id))}
+              className={`categoryButton ${
+                selectedCategory === Number(id) ? 'active' : ''
+              }`}
             >
-              {palette.colors.map((color, i) => (
-                <div
-                  key={i}
-                  className="colorBlockContainer"
-                  onClick={() => navigator.clipboard.writeText(color)}
-                  title="Click to copy"
-                >
+              {category.name}
+            </button>
+          ))}
+        </div>
+
+        {/* Palette Display */}
+        <div className="paletteList">
+          {palettesToShow.length > 0 ? (
+            palettesToShow.map((palette, index) => (
+              <div
+                key={index}
+                className="paletteBox"
+                ref={index === palettesToShow.length - 1 ? lastPaletteRef : null}
+              >
+                {palette.colors.map((color, i) => (
                   <div
-                    className="colorBlock"
-                    style={{ backgroundColor: color }}
-                  ></div>
-                  <span className="hexTooltip">{color}</span>
-                </div>
-              ))}
-            </div>
-          ))
-        ) : (
-          <p>No palettes found.</p>
-        )}
-        {loading && <p>Loading more palettes...</p>}
-      </div>
-    </div>
+                    key={i}
+                    className="colorBlockContainer"
+                    onClick={() => navigator.clipboard.writeText(color)}
+                    title="Click to copy"
+                  >
+                    <div
+                      className="colorBlock"
+                      style={{ backgroundColor: color }}
+                    ></div>
+                    <span className="hexTooltip">{color}</span>
+                  </div>
+                ))}
+              </div>
+            ))
+          ) : (
+            <p>No palettes found.</p>
+          )}
+          {loading && <p>Loading more palettes...</p>}
+        </div>
+       </div>
+      
+    
+    </>
+    
   );
 };
 

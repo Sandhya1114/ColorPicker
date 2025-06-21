@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './GradientMaker.css';
+import Footer from '../Footer/Footer';
 
 export default function GradientMaker() {
   const [stops, setStops] = useState([
@@ -76,7 +77,7 @@ export default function GradientMaker() {
       />
     </div>
     
-    
+     {<Footer/>}
     
     </>
     
