@@ -129,7 +129,7 @@ import './ColorPickerButton.css';
 const ColorPickerButton = () => {
     const [isOpen, setIsOpen] = useState(true);
     const [mode, setMode] = useState("hex");
-    const [color, setColor] = useState("#aabbcc");
+    const [color, setColor] = useState("#3d605c");
     const [hoveredColor, setHoveredColor] = useState("");
 
     const renderPicker = () => {

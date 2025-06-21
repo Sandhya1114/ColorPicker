@@ -36,6 +36,9 @@
 .slider:hover {
     opacity: 1;
 }
+.color-display{
+    width: 80vw;
+}
 
 .color-display div {
     position: relative;
@@ -49,14 +52,15 @@
 }
 .selected-color button{
     margin-left: 10px;
-    padding: 12px 14px;
+    margin-right: 10px;
+    padding: 15px 24px;
     font-size: 10px;
     /* background: linear-gradient(120deg, #ff6ec4, #7873f5); */
-    background: #FF8B4E;
-    background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%);
+    background: #030303;
+    /* background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%); */
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -142,6 +146,7 @@
     color: white;
     border-radius: 5px;
     white-space: nowrap;
-    padding: 5px;
+    padding:5px;
     top: 305px;
+    width: 66px;
 }
