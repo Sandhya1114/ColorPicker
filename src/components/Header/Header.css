@@ -18,10 +18,8 @@
   
 }
 
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
+.logo img{
+  border-radius: 30px;
 }
 
 .navLinks a {

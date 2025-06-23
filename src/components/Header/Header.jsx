@@ -9,7 +9,11 @@ export default function Header({ history }) {
   return (
     <header className="header">
       <div className="headerContainer">
-        <div className="logo">Color Palettes</div>
+        <div className="logo"> <img
+              src="./ImgeLog1.png"
+              height={40}
+              width={200}
+            /></div>
         <nav className="navLinks">
           <Link to="/">Home</Link>
           <Link to="/upload">Palette Generator</Link>

@@ -19,7 +19,7 @@
   background: none;
   cursor: pointer;
   border-radius: 4px;
-  color: #44594A;
+  color: #ffffff;
 }
 
 .gm-toggle button.active {
@@ -88,4 +88,11 @@ input[type='color']{
   text-align: center;
     color: rgb(231, 229, 229);
    
+}
+.btnGray{
+  background-color: #4B6050;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
 }
