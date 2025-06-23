@@ -54,3 +54,23 @@
 
 
 
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.username {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.logout-btn {
+  background-color: #02020200;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
