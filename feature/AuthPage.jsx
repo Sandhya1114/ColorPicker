@@ -70,3 +70,5 @@ const AuthPage = ({ setUser  }) => {
 };
 
 export default AuthPage;
+
+    
