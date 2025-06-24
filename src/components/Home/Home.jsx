@@ -40,96 +40,96 @@
          
 //       </div>
       
-//       {/* scroll */}
-//       <div className='pickergen'>
-//        <h1>Extract a beautiful color palette from your photos </h1>
-//         <p>A world of colors on the palette remaining... wandering... on canvases still emerging.Extract a beautiful color palette from your photos with our image color picker and palette extracting tool. </p>
-//       </div>
+      // {/* scroll */}
+      // <div className='pickergen'>
+      //  <h1>Extract a beautiful color palette from your photos </h1>
+      //   <p>A world of colors on the palette remaining... wandering... on canvases still emerging.Extract a beautiful color palette from your photos with our image color picker and palette extracting tool. </p>
+      // </div>
       
-//         <div className="cards-container">
+      //   <div className="cards-container">
           
-//           <div className="card" style={{ backgroundImage: "url('./plant.jpg')" }}>
-//             <div className="card-content">
-//               {/* <h3 className="card-title">Plant</h3>
-//               <p className="card-desc">A beautiful plant image.</p> */}
-//             </div>
-//           </div>
-//           {/* <div className="card" style={{ backgroundImage: "url('./pink.jpg')" }}>
-//             <div className="card-content">
-//               <h3 className="card-title">Pink</h3>
-//               <p className="card-desc">A vibrant pink image.</p>
-//             </div>
-//           </div> */}
-//           <div className="card" style={{ backgroundImage: "url('./oceanGreen.jpg')" }}>
-//             <div className="card-content">
-//               {/* <h3 className="card-title">Pink</h3>
-//               <p className="card-desc">A vibrant pink image.</p> */}
-//             </div>
-//           </div>
-//           <div className="card" style={{ backgroundImage: "url('./rainyPlant.jpg')" }}>
-//             <div className="card-content">
-//               {/* <h3 className="card-title">Pink</h3>
-//               <p className="card-desc">A vibrant pink image.</p> */}
-//             </div>
-//           </div>
-//           <div className="card" style={{ backgroundImage: "url('./lily.jpg')" }}>
-//             <div className="card-content">
-//               {/* <h3 className="card-title">Pink</h3>
-//               <p className="card-desc">A vibrant pink image.</p> */}
-//             </div>
-//           </div>
-//           <div className="card" style={{ backgroundImage: "url('./purple.jpg')" }}>
-//             <div className="card-content">
-//               {/* <h3 className="card-title">Purple</h3>
-//               <p className="card-desc">A stunning purple image.</p> */}
-//             </div>
-//           </div>
-//           <div className="card" style={{ backgroundImage: "url('./ocean.jpg')" }}>
-//             <div className="card-content">
-//               {/* <h3 className="card-title">Ocean</h3>
-//               <p className="card-desc">A serene ocean image.</p> */}
-//             </div>
-//           </div>
-//         </div>
-//         <div className='forPalettes'>
-//             <Link to="/upload">
-//             <button className="mainButton ">Get Started</button>
-//             </Link>
-//         </div>
+        //   <div className="card" style={{ backgroundImage: "url('./plant.jpg')" }}>
+        //     <div className="card-content">
+        //       {/* <h3 className="card-title">Plant</h3>
+        //       <p className="card-desc">A beautiful plant image.</p> */}
+        //     </div>
+        //   </div>
+        //   {/* <div className="card" style={{ backgroundImage: "url('./pink.jpg')" }}>
+        //     <div className="card-content">
+        //       <h3 className="card-title">Pink</h3>
+        //       <p className="card-desc">A vibrant pink image.</p>
+        //     </div>
+        //   </div> */}
+        //   <div className="card" style={{ backgroundImage: "url('./oceanGreen.jpg')" }}>
+        //     <div className="card-content">
+        //       {/* <h3 className="card-title">Pink</h3>
+        //       <p className="card-desc">A vibrant pink image.</p> */}
+        //     </div>
+        //   </div>
+        //   <div className="card" style={{ backgroundImage: "url('./rainyPlant.jpg')" }}>
+        //     <div className="card-content">
+        //       {/* <h3 className="card-title">Pink</h3>
+        //       <p className="card-desc">A vibrant pink image.</p> */}
+        //     </div>
+        //   </div>
+        //   <div className="card" style={{ backgroundImage: "url('./lily.jpg')" }}>
+        //     <div className="card-content">
+        //       {/* <h3 className="card-title">Pink</h3>
+        //       <p className="card-desc">A vibrant pink image.</p> */}
+        //     </div>
+        //   </div>
+        //   <div className="card" style={{ backgroundImage: "url('./purple.jpg')" }}>
+        //     <div className="card-content">
+        //       {/* <h3 className="card-title">Purple</h3>
+        //       <p className="card-desc">A stunning purple image.</p> */}
+        //     </div>
+        //   </div>
+        //   <div className="card" style={{ backgroundImage: "url('./ocean.jpg')" }}>
+        //     <div className="card-content">
+        //       {/* <h3 className="card-title">Ocean</h3>
+        //       <p className="card-desc">A serene ocean image.</p> */}
+        //     </div>
+        //   </div>
+        // </div>
+        // <div className='forPalettes'>
+        //     <Link to="/upload">
+        //     <button className="mainButton ">Get Started</button>
+        //     </Link>
+      //   </div>
         
 
 //       {/* Services Section */}
-//       <div className="servicesSection">
-//         <h2 className="servicesHeading">Our Offerings</h2>
+      // <div className="servicesSection">
+      //   <h2 className="servicesHeading">Our Offerings</h2>
         
-//         <div className="servicesList">
-//           <div className="serviceBox">
-//             <h3>Generate Color Palettes</h3>
-//             <p>Create custom palettes based on your image colors for UI/UX or branding.</p>
-//           </div>
-//           <div className="serviceBox">
-//             <h3>Extract Dominant Colors</h3>
-//             <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
-//           </div>
+      //   <div className="servicesList">
+      //     <div className="serviceBox">
+      //       <h3>Generate Color Palettes</h3>
+      //       <p>Create custom palettes based on your image colors for UI/UX or branding.</p>
+      //     </div>
+      //     <div className="serviceBox">
+      //       <h3>Extract Dominant Colors</h3>
+      //       <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
+      //     </div>
           
-//           <div className="serviceBox">
-//             <h3>Download or Share</h3>
-//             <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
-//           </div>
-//           <div className="serviceBox">
-//             <h3>Colors Picker with it Shades </h3>
-//             <p>Genrate multiple shades of it's color in HEX format.</p>
-//           </div>
-//           <div className="serviceBox">
-//             <h3>Generate Color Gradient</h3>
-//             <p>Create custom Gradient get it's code</p>
-//           </div>
-//           <div className="serviceBox">
-//             <h3>Get thousands of Palettes</h3>
-//             <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
-//           </div>
-//         </div>
-//       </div>
+      //     <div className="serviceBox">
+      //       <h3>Download or Share</h3>
+      //       <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
+      //     </div>
+      //     <div className="serviceBox">
+      //       <h3>Colors Picker with it Shades </h3>
+      //       <p>Genrate multiple shades of it's color in HEX format.</p>
+      //     </div>
+      //     <div className="serviceBox">
+      //       <h3>Generate Color Gradient</h3>
+      //       <p>Create custom Gradient get it's code</p>
+      //     </div>
+      //     <div className="serviceBox">
+      //       <h3>Get thousands of Palettes</h3>
+      //       <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
+      //     </div>
+      //   </div>
+      // </div>
 
 //       {<Footer/>}
       
@@ -140,7 +140,7 @@
 // export default Home;
 
 /// src/components/Home/Home.jsx
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { supabase } from '../../supabaseClient'; // Import the Supabase client
 import './Home.css';
 import Footer from '../Footer/Footer';
@@ -191,20 +191,90 @@ function Home() {
       </div>
 
       <div className="cards-container">
-        {/* Card components remain unchanged */}
+       
+          <div className="card" style={{ backgroundImage: "url('./plant.jpg')" }}>
+            <div className="card-content">
+              {/* <h3 className="card-title">Plant</h3>
+              <p className="card-desc">A beautiful plant image.</p> */}
+            </div>
+          </div>
+          {/* <div className="card" style={{ backgroundImage: "url('./pink.jpg')" }}>
+            <div className="card-content">
+              <h3 className="card-title">Pink</h3>
+              <p className="card-desc">A vibrant pink image.</p>
+            </div>
+          </div> */}
+          <div className="card" style={{ backgroundImage: "url('./oceanGreen.jpg')" }}>
+            <div className="card-content">
+              {/* <h3 className="card-title">Pink</h3>
+              <p className="card-desc">A vibrant pink image.</p> */}
+            </div>
+          </div>
+          <div className="card" style={{ backgroundImage: "url('./rainyPlant.jpg')" }}>
+            <div className="card-content">
+              {/* <h3 className="card-title">Pink</h3>
+              <p className="card-desc">A vibrant pink image.</p> */}
+            </div>
+          </div>
+          <div className="card" style={{ backgroundImage: "url('./lily.jpg')" }}>
+            <div className="card-content">
+              {/* <h3 className="card-title">Pink</h3>
+              <p className="card-desc">A vibrant pink image.</p> */}
+            </div>
+          </div>
+          <div className="card" style={{ backgroundImage: "url('./purple.jpg')" }}>
+            <div className="card-content">
+              {/* <h3 className="card-title">Purple</h3>
+              <p className="card-desc">A stunning purple image.</p> */}
+            </div>
+          </div>
+          <div className="card" style={{ backgroundImage: "url('./ocean.jpg')" }}>
+            <div className="card-content">
+              {/* <h3 className="card-title">Ocean</h3>
+              <p className="card-desc">A serene ocean image.</p> */}
+            </div>
+          </div>
+        </div>
+        <div className='forPalettes'>
+            <Link to="/upload">
+            <button className="mainButton ">Get Started</button>
+            </Link>
       </div>
 
-      <div className='forPalettes'>
-        <button className="mainButton">Get Started</button>
-      </div>
 
-      {/* Services Section remains unchanged */}
-      <div className="servicesSection">
+      {/* Services Section */}
+        <div className="servicesSection">
         <h2 className="servicesHeading">Our Offerings</h2>
+        
         <div className="servicesList">
-          {/* Service boxes remain unchanged */}
+          <div className="serviceBox">
+            <h3>Generate Color Palettes</h3>
+            <p>Create custom palettes based on your image colors for UI/UX or branding.</p>
+          </div>
+          <div className="serviceBox">
+            <h3>Extract Dominant Colors</h3>
+            <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
+          </div>
+          
+          <div className="serviceBox">
+            <h3>Download or Share</h3>
+            <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
+          </div>
+          <div className="serviceBox">
+            <h3>Colors Picker with it Shades </h3>
+            <p>Genrate multiple shades of it's color in HEX format.</p>
+          </div>
+          <div className="serviceBox">
+            <h3>Generate Color Gradient</h3>
+            <p>Create custom Gradient get it's code</p>
+          </div>
+          <div className="serviceBox">
+            <h3>Get thousands of Palettes</h3>
+            <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
+          </div>
         </div>
       </div>
+
 
       <Footer />
     </>
