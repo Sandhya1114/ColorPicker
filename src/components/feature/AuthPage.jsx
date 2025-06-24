@@ -1,9 +1,6 @@
-
-
-// src/components/AuthPage/AuthPage.jsx
 import { useState } from 'react';
-import { supabase } from '../src/supabaseClient';// Import the Supabase client
-import './AuthPage.css'; // Optional: Add your CSS styles
+import { supabase } from '../../supabaseClient';// Import the Supabase client
+import './AuthPage.css'; 
 
 const AuthPage = ({ setUser  }) => {
   const [email, setEmail] = useState('');

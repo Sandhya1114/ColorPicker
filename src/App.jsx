@@ -72,7 +72,7 @@
 
 
 import { supabase } from './supabaseClient'; // Import the Supabase client
-import AuthPage from '../feature/AuthPage'; 
+import AuthPage from './components/feature/AuthPage'; 
 // src/App.jsx
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';

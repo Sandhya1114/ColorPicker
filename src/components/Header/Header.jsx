@@ -54,7 +54,8 @@ export default function Header({ history, user }) {
           <Link to="/palettes">Explore Palettes</Link>
           <CustomDropdown />
           {user ? (
-            <span>Welcome, {user.email}</span>
+            <span>{user?.user_metadata?.first_name || user?.email?.split('@')[0] || 'User'}</span>
+
           ) : (
             <Link to="/auth">
               <button>Sign In</button>
