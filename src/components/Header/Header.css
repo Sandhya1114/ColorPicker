@@ -54,7 +54,6 @@
 
 
 
-
 .auth-section {
   display: flex;
   align-items: center;
@@ -64,7 +63,6 @@
   font-weight: 500;
   color: #ffffff;
 }
-
 .logout-btn {
   background-color: #02020200;
   color: white;

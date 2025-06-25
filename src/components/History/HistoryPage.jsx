@@ -1,6 +1,6 @@
 import { Link,useNavigate } from 'react-router-dom';
 import './HistoryPage.css';
-import Footer from '../Footer/Footer';
+import BottomFooter from '../Footer/BottomFooter';
 
 function rgbToHex(r, g, b) {
   return (
@@ -27,6 +27,7 @@ export default function HistoryPage({ history }) {
           <button className="backBtn" onClick={() => navigate(-1)}>← Back</button>
            <button className="backBtn" ><Link to="/upload"> Palette Generator</Link></button>
           
+          
           <h2 className='HistoryHeading'>Searched Images</h2>
           <p className='historyLine'>click on any image to get more clearly see and customize</p>
           {history.length === 0 ? (
@@ -49,7 +50,7 @@ export default function HistoryPage({ history }) {
             </div>
           )}
        </div>
-       <Footer/>
+       <BottomFooter/>
     </>
     
   );

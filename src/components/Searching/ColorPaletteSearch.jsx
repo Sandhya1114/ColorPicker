@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import _ from 'lodash';
 import './ColorPaletteSearch.css';
 import colorData from '../Palattes/Data/colorPalettes';
-import Footer from '../Footer/Footer';
+
+import BottomFooter from '../Footer/BottomFooter';
 
 const ColorPaletteSearch = ({ colorData }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -154,7 +155,7 @@ const ColorPaletteSearch = ({ colorData }) => {
         )}
         
       </div>
-      <Footer/>
+      <BottomFooter/>
     </>
     
   );

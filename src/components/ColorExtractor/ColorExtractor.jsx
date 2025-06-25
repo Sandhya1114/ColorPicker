@@ -110,7 +110,7 @@ import { useState, useEffect } from 'react';
 import ColorThief from 'colorthief';
 import './ColorExtractor.css';
 import PaletteGrid from '../Palattes/PaletteGrid';
-import Footer from '../Footer/Footer';
+import BottomFooter from '../Footer/BottomFooter';
 
 function rgbToHex(r, g, b) {
   return (
@@ -219,9 +219,17 @@ export default function ColorExtractor({ history, setHistory, initialItem }) {
           )}
         </div>
       </div>
+       {history.length > 0 && (
+            <button 
+              onClick={() => handleProtectedNav('/history')}
+              className="nav-link history-btn"
+            >
+              View History
+            </button>
+          )}
       <div>
         <PaletteGrid />
-        <Footer/>
+        <BottomFooter/>
       </div>
     </div>
   );

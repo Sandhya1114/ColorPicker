@@ -60,12 +60,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footerBottom">
+      {/* <div className="footerBottom">
         <p>
           &copy; {new Date().getFullYear()} Color Picker  <strong> All rights reserved</strong>. Let's make something cool!
            
         </p>
-      </div>
+      </div> */}
     </footer>
   );
 }

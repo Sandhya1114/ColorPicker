@@ -47,3 +47,9 @@ h5 {
     transition: background 0.2s ease;
     position: relative;
 }
+.dropdown-menu>#HistoryBtn{
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  font-size: 14px;
+}
