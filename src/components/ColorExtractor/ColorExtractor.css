@@ -314,3 +314,12 @@
   from { transform: translateY(30px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+.forDivieded .history-btn{
+ background-color: black;
+ width: 250px;
+ padding: 20px;
+ border-radius: 30px;
+ box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+ margin-left: 65vw;
+}

@@ -193,7 +193,7 @@ function App() {
           {/* Protected Routes */}
           <Route path="/upload" element={
             <ProtectedRoute user={user}>
-              <ColorExtractor history={history} setHistory={setHistory} user={user} />
+              <ColorExtractor history={history} setHistory={setHistory} user={user} setUser={setUser} />
             </ProtectedRoute>
           } />
           

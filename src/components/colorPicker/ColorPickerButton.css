@@ -36,9 +36,9 @@
 .slider:hover {
     opacity: 1;
 }
-.color-display{
+/* .color-display{
     width: 80vw;
-}
+} */
 
 .color-display div {
     position: relative;
@@ -49,6 +49,10 @@
 }
 .pickerAndColor{
     display: flex;
+    /* margin: auto; */
+    /* width: 90vw; */
+    justify-content: center;
+    gap: 30px;
 }
 .selected-color button{
     margin-left: 10px;
@@ -112,7 +116,7 @@
 }
 
 .color-picker-dropdown {
-    margin-left: 15vw;
+    /* margin-left: 15vw; */
     margin-bottom: 10vh;
     /* Styles for the dropdown section */
 }

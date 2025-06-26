@@ -191,14 +191,14 @@ header h1,p{
     color: #4B5563; /* Gray color */
 }
 
-.color-inputs {
+.color-input {
     display: flex;
     gap: 1rem;
 }
-
+/* 
 .color-input {
     flex: 1;
-}
+} */
 
 .color-input label {
     display: block;

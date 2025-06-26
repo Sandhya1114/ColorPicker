@@ -93,13 +93,14 @@
   text-align: center;
 }
 .pickergen{  
-    width: 60vw;
+    width: 80vw;
     margin: auto;
     color: white;
     margin-bottom:10vh;
     margin-top:15vh;
   }
   .pickergen h1{
+    font-size: 3.3rem;
     text-align: center;
   }
 .servicesHeading {
@@ -201,7 +202,7 @@ body {
 
 .card {
     position: relative;
-    min-width: 250px;
+    min-width: 242px;
     height: 400px;
     background: #222;
     border-radius: 20px;
@@ -302,4 +303,12 @@ body {
         width: 85%;
         height: 320px;
     }
+}
+
+
+@media (max-width: 1280px){
+    .color-picker-dropdown {
+    margin-left: 7vw;
+    margin-bottom: 10vh;
+}
 }
