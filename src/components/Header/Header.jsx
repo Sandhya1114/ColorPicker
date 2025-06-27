@@ -27,7 +27,9 @@ export default function Header({ history, user, setUser  }) {
         </div>
         <nav className="navLinks">
           <Link to="/" className="nav-link">Home</Link>
-          <button 
+          <Link to="/upload" className="nav-link">Palette Generator</Link>
+          <Link to="/picker" className="nav-link">Color Picker</Link>
+          {/* <button 
             onClick={() => handleProtectedNav('/upload')}
             className="nav-link protected-link"
           >
@@ -39,7 +41,7 @@ export default function Header({ history, user, setUser  }) {
           >
             
             Color Picker
-          </button>
+          </button> */}
           <Link to="/palettes" className="nav-link">Explore Palettes</Link>
           <CustomDropdown  history={history}/>
           <AuthButton user={user} setUser ={setUser } />

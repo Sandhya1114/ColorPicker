@@ -97,7 +97,7 @@ function App() {
         console.error('Error fetching session:', error);
       }
     };
-   
+
     fetchSession();
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
@@ -116,49 +116,33 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        <Header history={history} user={user} setUser={setUser}/>
+        <Header history={history} user={user} setUser={setUser} />
         <Routes>
           <Route path="/" element={<Home user={user} />} />
           <Route path="/auth" element={<AuthPage setUser={setUser} />} />
           
           {/* Protected Routes */}
-          {/* <Route path="/upload" element={
-            // <ProtectedRoute user={user}>
-              <ColorExtractor history={history} setHistory={setHistory} user={user} setUser={setUser} />
-            // </ProtectedRoute>
-          } /> */}
-          <Route path="/upload" element={<HomeWrapper history={history} setHistory={setHistory} />} />
-          
-          <Route path="/picker" element={
-            // <ProtectedRoute user={user}>
-              <ColorPickerButton />
-            // </ProtectedRoute>
-          } />
-          
-          {/* Public Routes */}
-          {/* <Route path="/palettes" element={<ColorPaletteSearch colorData={colorData} user={user} />} /> */}
-          <Route path="/palettes" element={
+          <Route path="/upload" element={
             
-              <ColorPaletteSearch colorData={colorData} user={user} />
+              <ColorExtractor history={history} setHistory={setHistory} user={user} setUser={setUser} />
            
           } />
+          
+          <Route path="/picker" element={
+            
+              <ColorPickerButton user={user} />
+            
+          } />
+
+          {/* Public Routes */}
+          <Route path="/palettes" element={<ColorPaletteSearch colorData={colorData} user={user} />} />
           <Route path="/history" element={
-            // <ProtectedRoute user={user}>
+           
               <HistoryPage history={history} user={user} />
-            // </ProtectedRoute>
+          
           } />
-          {/* <Route path="/gradient" element={<GradientMaker user={user} />} /> */}
-          <Route path="/gradient" element={
-            // <ProtectedRoute user={user}>
-              <GradientMaker user={user} />
-            // </ProtectedRoute>
-          } />
+          <Route path="/gradient" element={<GradientMaker user={user} />} />
           <Route path="/imagePreview" element={<ColorReplacerr/>}/>
-          {/* <Route path="/imagePreview" element={
-            <ProtectedRoute user={user}>
-              <ColorReplacerr />
-            </ProtectedRoute>
-          } /> */}
           {/* Fallback for protected route attempts */}
           <Route path="/protected-notification" element={<ProtectedRouteNotification />} />
         </Routes>
