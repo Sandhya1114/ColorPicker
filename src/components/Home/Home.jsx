@@ -146,17 +146,19 @@ import './home.css';
 import Footer from '../Footer/Footer';
 
 function Home() {
-  const navigate = useNavigate();
+  /"const navigate = useNavigate();
 
-  const handleExploreClick = async () => {
+  // const handleExploreClick = async () => {
     // const { data: { user } } = await supabase.auth.getUser (); // Use getUser () to retrieve the current user
     // if (user) {
-      navigate('/upload'); // Navigate to upload if user is authenticated
+      // navigate('/upload'); // Navigate to upload if user is authenticated
     // } else {
     //   navigate('/auth'); // Redirect to AuthPage if not authenticated
     // }
-  };
-
+  // };
+const handleExploreClick=()=>{
+   navigate('/upload');
+}
   return (
     <>
       <div className="homeContainer">
