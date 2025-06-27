@@ -78,7 +78,8 @@
 // src/components/Header/Header.jsx
 import AuthButton from '../feature/AuthButton';
 import CustomDropdown from './CustomDropdown';
-import './header.css'; // Ensure this imports your existing styles
+import './Header/header.css'; // Ensure this imports your existing styles
+
 import { Link, useNavigate } from 'react-router-dom';
 // import AuthButton from '../AuthButton/AuthButton';
 
