@@ -7,16 +7,16 @@ export default function Header({ history, user, setUser  }) {
   const navigate = useNavigate();
 
   const handleProtectedNav = (path) => {
-    if (!user) {
-      navigate('/auth', { 
-        state: { 
-          from: path,
-          message: 'Please sign in to access this feature'
-        } 
-      });
-    } else {
+    // if (!user) {
+    //   navigate('/auth', { 
+    //     state: { 
+    //       from: path,
+    //       message: 'Please sign in to access this feature'
+    //     } 
+    //   });
+    // } else {
       navigate(path);
-    }
+    // }
   };
   
   return (

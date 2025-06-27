@@ -116,7 +116,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        <Header history={history}  />
+        <Header history={history} user={user} setUser={setUser}/>
         <Routes>
           <Route path="/" element={<Home user={user} />} />
           <Route path="/auth" element={<AuthPage setUser={setUser} />} />
