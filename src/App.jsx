@@ -116,17 +116,18 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen">
-        <Header history={history} user={user} setUser={setUser} />
+        <Header history={history}  />
         <Routes>
           <Route path="/" element={<Home user={user} />} />
           <Route path="/auth" element={<AuthPage setUser={setUser} />} />
           
           {/* Protected Routes */}
-          <Route path="/upload" element={
+          {/* <Route path="/upload" element={
             // <ProtectedRoute user={user}>
               <ColorExtractor history={history} setHistory={setHistory} user={user} setUser={setUser} />
             // </ProtectedRoute>
-          } />
+          } /> */}
+          <Route path="/upload" element={<HomeWrapper history={history} setHistory={setHistory} />} />
           
           <Route path="/picker" element={
             // <ProtectedRoute user={user}>
