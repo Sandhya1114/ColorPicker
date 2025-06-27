@@ -1,7 +1,7 @@
 import AuthButton from '../feature/AuthButton';
 import CustomDropdown from './CustomDropdown';
 import { Link, useNavigate } from 'react-router-dom';
-import './header.css';
+import './Header.css';
 
 export default function Header({ history, user, setUser  }) {
   const navigate = useNavigate();
