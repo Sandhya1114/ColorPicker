@@ -110,7 +110,7 @@
 
 
 
-@media (min-width: 490px) {
+/* @media (min-width: 490px) {
   .historyPageContainer {
     width: 90vw;
     max-width: 720px;
@@ -141,7 +141,7 @@
     width: 60px;
     height: 50px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
     /* margin: 6px; */
-}
-}
+/* }
+} */
