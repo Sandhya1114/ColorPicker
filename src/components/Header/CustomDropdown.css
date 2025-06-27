@@ -43,7 +43,7 @@ h5 {
     padding: 8px 12px;
     margin-left: 10px;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 20px;
     transition: background 0.2s ease;
     position: relative;
 }
@@ -78,7 +78,7 @@ h5 {
   .dropdown-toggle {
     width: auto;
     padding: 8px 12px;
-    font-size: 15px;
+    font-size: 19px;
   }
   .dropdown-menu {
     position: absolute;

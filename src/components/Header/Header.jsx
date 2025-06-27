@@ -44,7 +44,7 @@ export default function Header({ history, user, setUser  }) {
           </button> */}
           <Link to="/palettes" className="nav-link">Explore Palettes</Link>
           <CustomDropdown  history={history}/>
-          <AuthButton user={user} setUser ={setUser } />
+          {/* <AuthButton user={user} setUser ={setUser } /> */}
           {/* {history.length > 0 && (
             <button 
               onClick={() => handleProtectedNav('/history')}
