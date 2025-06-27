@@ -49,3 +49,34 @@
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
+
+@media (max-width: 490px) {
+  .footerGrid {
+    justify-content: space-between;
+    display: block;
+    flex: 200px 200px 200px;
+  
+  }
+  .footerColumn {
+    flex: 1 1 50%;
+    margin: 10px;
+  }
+  .footerColumn h4,
+  .footerColumn ul {
+    text-align: left;
+  }
+
+  .footerColumn li {
+    color: #4b4949;
+  }
+
+  .footerBottom {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #4b4949;
+  border-top: 1px solid #e5e5e5;
+}
+
+  
+}

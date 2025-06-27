@@ -96,6 +96,8 @@ const AuthButton = ({ user, setUser  }) => {
     if (!error) setUser (null);
     setShowDropdown(false);
   };
+    
+   
 
   // Get the user's avatar URL with fallbacks
   const getAvatarUrl = () => {

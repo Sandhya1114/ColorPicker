@@ -1,3 +1,4 @@
+import BottomFooter from './BottomFooter';
 import './Footer.css';
 
 export default function Footer() {
@@ -66,6 +67,7 @@ export default function Footer() {
            
         </p>
       </div> */}
+      <BottomFooter/>
     </footer>
   );
 }

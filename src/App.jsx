@@ -82,6 +82,7 @@ import GradientMaker from './components/GradientMaker/GradientMaker';
 import ProtectedRoute from './components/ProtectedRoute';
 import ProtectedRouteNotification from './components/ProtectedRouteNotification';
 import ImageColorEditor from "./components/Preview/ImageColorEditor";
+import ColorReplacerr from './components/Experimant/experimant';
 
 function App() {
   const [history, setHistory] = useState([]);
@@ -96,7 +97,7 @@ function App() {
         console.error('Error fetching session:', error);
       }
     };
-
+   
     fetchSession();
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
@@ -132,16 +133,31 @@ function App() {
               <ColorPickerButton user={user} />
             </ProtectedRoute>
           } />
-
+          
           {/* Public Routes */}
-          <Route path="/palettes" element={<ColorPaletteSearch colorData={colorData} user={user} />} />
+          {/* <Route path="/palettes" element={<ColorPaletteSearch colorData={colorData} user={user} />} /> */}
+          <Route path="/palettes" element={
+            <ProtectedRoute user={user}>
+              <ColorPaletteSearch colorData={colorData} user={user} />
+            </ProtectedRoute>
+          } />
           <Route path="/history" element={
             <ProtectedRoute user={user}>
               <HistoryPage history={history} user={user} />
             </ProtectedRoute>
           } />
-          <Route path="/gradient" element={<GradientMaker user={user} />} />
-          <Route path="/imagePreview" element={<ImageColorEditor/>}/>
+          {/* <Route path="/gradient" element={<GradientMaker user={user} />} /> */}
+          <Route path="/gradient" element={
+            <ProtectedRoute user={user}>
+              <GradientMaker user={user} />
+            </ProtectedRoute>
+          } />
+          {/* <Route path="/imagePreview" element={<ColorReplacerr/>}/> */}
+          <Route path="/imagePreview" element={
+            <ProtectedRoute user={user}>
+              <ColorReplacerr />
+            </ProtectedRoute>
+          } />
           {/* Fallback for protected route attempts */}
           <Route path="/protected-notification" element={<ProtectedRouteNotification />} />
         </Routes>

@@ -96,3 +96,38 @@ input[type='color']{
     border: none;
     padding: 10px;
 }
+
+
+@media (max-width: 490px) {
+  .gm-container {
+    width: 100%;
+    margin: 15px;
+  }
+  .gm-preview {
+    height: 220px;
+  }
+  .gm-controls {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  input[type='color'] {
+    flex: 1 1 40%;
+  }
+  .btnGray {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .gm-css {
+  width:96%;
+  font-family: monospace;
+  margin-top: 0rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 4px;
+  resize: none;
+  color: #ddd;
+  background-color: #44594A;
+}
+}

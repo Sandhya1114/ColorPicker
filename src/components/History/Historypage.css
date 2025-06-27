@@ -107,3 +107,41 @@
 }
 
   
+
+
+
+@media (min-width: 490px) {
+  .historyPageContainer {
+    width: 90vw;
+    max-width: 720px;
+  }
+  .historyList {
+    gap: 15px;
+  }
+  .historyItem {
+    width: 100%;
+    max-width: none;
+    padding: 12px;
+    display: block;
+  }
+  .historyThumb {
+    height: 150;
+    width: 275px;
+  }
+  .historyBtn,
+  .backBtn button,
+  .backBtn a {
+    width: 150px;
+    margin: 0px auto 0px;
+  }
+  .HistoryHeading {
+    font-size: 3rem;
+  }
+  .colorBox {
+    width: 60px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* margin: 6px; */
+}
+}

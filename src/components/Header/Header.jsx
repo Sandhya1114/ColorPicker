@@ -102,7 +102,7 @@ export default function Header({ history, user, setUser  }) {
     <header className="header">
       <div className="headerContainer">
         <div className="logo">
-          <img src="./logoDEsign.png" height={40} width={200} alt="Logo" />
+          <img src="./logoDEsign.png" height={40} width={300} alt="Logo" />
         </div>
         <nav className="navLinks">
           <Link to="/" className="nav-link">Home</Link>

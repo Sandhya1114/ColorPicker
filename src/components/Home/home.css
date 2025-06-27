@@ -312,3 +312,166 @@ body {
     margin-bottom: 10vh;
 }
 }
+
+
+
+@media (max-width: 490px) {
+
+    .homeContainer{
+      /* display: block; */
+      flex-direction: column;
+      padding: 0;
+    }
+
+    .heroSection {
+      width: 100%;
+      margin-top: -20px;
+    }
+     .mainHeading{
+      margin-right: 0px;
+     }
+    .description {
+      padding-left: 30px;
+    }
+
+    .pickergen {
+      width: 95%;
+      margin-top: 0px;
+    }
+
+    .pickergen p {
+      width: 95%;
+      margin: auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30px;
+        width: 100%;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-top: -80px;
+        min-width: 80%;
+        height: 300px;
+    }
+
+    .card:first-child {
+        margin-top: 0;
+    }
+
+    .card:hover {
+    transform: translateY(-20px);
+    z-index: 20 !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover .card-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+.card:hover .card-desc {
+    opacity: 0.8;
+    transition-delay: 0.3s;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.mainButton{
+  margin-top: 0px;
+}
+
+    .servicesSection{
+      margin-top: -40px;
+    }
+
+    .serviceBox{
+      padding: 20px;
+      width: 200px;
+      height: auto;
+
+    }
+    
+    .mainHeading{
+      font-size: 30px;
+    }
+
+    .HeroImg{
+      width: 200px;
+      height: 300px;
+      border-radius: 1px 50px;
+      margin-left: 5px;
+      margin-top: 5vh;
+    }
+    .description{
+      text-align: center;
+      margin-left: -30px;
+    }
+
+    .homeContainer{
+      width: 100%;
+    }
+
+    /* .card:hover {
+      opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+    } */
+
+    .card:hover .card-content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card:hover .card-desc {
+    opacity: 0.8;
+    transition-delay: 0.3s;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+}

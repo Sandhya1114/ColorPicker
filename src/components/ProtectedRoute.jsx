@@ -1,6 +1,6 @@
 // src/components/ProtectedRoute.jsx
-import { useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+// import { useEffect } from 'react';
+// import { useNavigate, useLocation } from 'react-router-dom';
 
 // const ProtectedRoute = ({ user, children }) => {
 //   const navigate = useNavigate();
@@ -25,11 +25,37 @@ import { useNavigate, useLocation } from 'react-router-dom';
 
 //   return children;
 // };
+// const ProtectedRoute = ({ user, children }) => {
+//   const navigate = useNavigate();
+//   const location = useLocation();
+//   useEffect(() => {
+//     if (!user || !user.email_confirmed_at) {
+//       // Store intended path for redirect after login
+//       navigate('/auth', { 
+//         state: { 
+//           from: location.pathname,
+//           protected: true 
+//         } 
+//       });
+//     }
+//   }, [user, navigate, location]);
+//   if (!user || !user.email_confirmed_at) {
+//     return null; // Optionally show a loading spinner
+//   }
+//   return children;
+// };
+
+// export default ProtectedRoute;
+import { useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+
 const ProtectedRoute = ({ user, children }) => {
   const navigate = useNavigate();
   const location = useLocation();
+
   useEffect(() => {
-    if (!user || !user.email_confirmed_at) {
+    console.log('User :', user); // Debugging: Log the user object
+    if (!user) {
       // Store intended path for redirect after login
       navigate('/auth', { 
         state: { 
@@ -39,9 +65,11 @@ const ProtectedRoute = ({ user, children }) => {
       });
     }
   }, [user, navigate, location]);
-  if (!user || !user.email_confirmed_at) {
+
+  if (!user) {
     return null; // Optionally show a loading spinner
   }
+
   return children;
 };
 

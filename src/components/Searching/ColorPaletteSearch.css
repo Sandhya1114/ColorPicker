@@ -223,3 +223,62 @@
     visibility: visible;
     opacity: 1;
 }
+
+@media (max-width: 490px) {
+  .color-palette-search h1, p {
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .color-palette-search {
+
+  }
+
+  .search-section {
+    display: block;
+  }
+
+  .search-section input {
+  background-color: #ffffff2e;
+  padding: 10px 45px;
+  flex-grow: 1;
+  border: 1px solid #ddd;
+  border-radius: 49px;
+  font-size: 16px;
+  margin: 5px;
+  color: #1e1d1d;
+}
+
+.search-section input::placeholder {
+  color: #373636;
+}
+
+  .search-section button {
+     padding: 13px 110px;
+ background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  margin: 5px;
+  }
+
+  .results-grid {
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .palette-card {
+
+  }
+
+  .palette-colors {
+    height: 120px;
+  }
+  .color-box .hex-code {
+    font-size: 14px;
+  }
+}
+

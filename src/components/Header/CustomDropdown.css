@@ -43,7 +43,7 @@ h5 {
     padding: 8px 12px;
     margin-left: 10px;
     border-radius: 6px;
-    font-size: 15px;
+    font-size: 18px;
     transition: background 0.2s ease;
     position: relative;
 }
@@ -64,4 +64,26 @@ h5 {
   font-size: 12px;
   color: rgb(184, 184, 184);
   margin-left: 10px;
+}
+
+
+
+
+
+@media (min-width: 300px) {
+  .dropdown {
+    display: inline-block;
+    width: auto;
+  }
+  .dropdown-toggle {
+    width: auto;
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    width: 150px;
+    right: -51px;
+    top: 30px;
+  }
 }
