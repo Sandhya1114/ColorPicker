@@ -85,7 +85,7 @@
 // export default AuthButton;
 import { useState, useEffect, useRef } from 'react';
 import { supabase } from '../../supabaseClient';
-import './AuthButton.css';
+import './authButton.css';
 
 const AuthButton = ({ user, setUser  }) => {
   const [showDropdown, setShowDropdown] = useState(false);

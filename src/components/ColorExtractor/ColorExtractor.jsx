@@ -253,7 +253,7 @@
 
 import { useState, useEffect } from 'react';
 import ColorThief from 'colorthief';
-import './ColorExtractor.css';
+import './colorExtractor.css';
 import PaletteGrid from '../Palattes/PaletteGrid';
 import BottomFooter from '../Footer/BottomFooter';
 import { useNavigate } from 'react-router-dom';

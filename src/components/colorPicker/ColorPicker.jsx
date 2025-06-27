@@ -125,7 +125,7 @@ import {
     RgbColorPicker,
     HslColorPicker,
 } from "react-colorful";
-import './ColorPickerButton.css';
+import './colorPickerButton.css';
 import BottomFooter from "../Footer/BottomFooter";
 
 const ColorPickerButton = () => {

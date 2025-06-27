@@ -1,6 +1,6 @@
 // src/components/ProtectedRouteNotification.jsx
 import { useLocation, useNavigate } from 'react-router-dom';
-import './ProtectedRouteNotification.css';
+import './protectedRouteNotification.css';
 
 const ProtectedRouteNotification = () => {
   const location = useLocation();

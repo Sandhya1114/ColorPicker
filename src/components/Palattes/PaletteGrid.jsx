@@ -1,7 +1,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import colorData from './Data/colorPalettes'; // Updated import to match new structure
-import './PaletteGrid.css';
+import './paletteGrid.css';
 import Footer from '../Footer/Footer';
 
 const PaletteGrid = () => {

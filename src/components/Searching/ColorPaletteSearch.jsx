@@ -2,7 +2,7 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import './ColorPaletteSearch.css';
+import './colorPaletteSearch.css';
 import colorData from '../Palattes/Data/colorPalettes';
 
 import BottomFooter from '../Footer/BottomFooter';
