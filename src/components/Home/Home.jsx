@@ -142,7 +142,7 @@
 /// src/components/Home/Home.jsx
 import { useNavigate,Link } from 'react-router-dom';
 import { supabase } from '../../supabaseClient'; // Import the Supabase client
-import './home.css';
+import './Home.css';
 import Footer from '../Footer/Footer';
 
 function Home() {

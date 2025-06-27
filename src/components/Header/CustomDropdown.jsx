@@ -70,7 +70,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './customDropdown.css'; // Create a CSS file for styles
+import './CustomDropdown.css'; // Create a CSS file for styles
 
 const CustomDropdown = ({ user, setUser , history }) => {
   const [isOpen, setIsOpen] = useState(false);

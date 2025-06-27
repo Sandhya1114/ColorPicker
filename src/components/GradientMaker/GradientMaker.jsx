@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react';
-import './gradientMaker.css';
+import './GradientMaker.css';
 import BottomFooter from '../Footer/BottomFooter';
 
 export default function GradientMaker() {

@@ -843,7 +843,7 @@
 // export default ImageColorEditor;
 import { useEffect, useRef, useState } from 'react';
 import ColorThief from 'colorthief'; // Import ColorThief
-import './imageColorEditor.css'; 
+import './ImageColorEditor.css'; 
 import BottomFooter from '../Footer/BottomFooter';
 
 const ImageColorEditor = () => {

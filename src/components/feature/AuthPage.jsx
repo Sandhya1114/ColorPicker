@@ -212,7 +212,7 @@
 import { useState } from 'react';
 import { supabase } from '../../supabaseClient';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './authPage.css';
+import './AuthPage.css';
 
 const AuthPage = ({ setUser  }) => {
   const [email, setEmail] = useState('');
