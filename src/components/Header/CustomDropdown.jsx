@@ -72,22 +72,22 @@ import { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './CustomDropdown.css'; // Create a CSS file for styles
 
-const CustomDropdown = ({ user, setUser , history }) => {
+const CustomDropdown = ({  history }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const dropdownRef = useRef(null); // Create a ref for the dropdown
 
   const handleProtectedNav = (path) => {
-    if (!user) {
-      navigate('/auth', { 
-        state: { 
-          from: path,
-          message: 'Please sign in to access this feature'
-        } 
-      });
-    } else {
+    // if (!user) {
+    //   navigate('/auth', { 
+    //     state: { 
+    //       from: path,
+    //       message: 'Please sign in to access this feature'
+    //     } 
+    //   });
+    // } else {
       navigate(path);
-    }
+    // }
   };
 
   const toggleDropdown = () => {

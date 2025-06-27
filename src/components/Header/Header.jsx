@@ -41,7 +41,7 @@ export default function Header({ history, user, setUser  }) {
             Color Picker
           </button>
           <Link to="/palettes" className="nav-link">Explore Palettes</Link>
-          <CustomDropdown user={user} setUser ={setUser } history={history}/>
+          <CustomDropdown  history={history}/>
           <AuthButton user={user} setUser ={setUser } />
           {/* {history.length > 0 && (
             <button 
