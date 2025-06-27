@@ -123,41 +123,41 @@ function App() {
           
           {/* Protected Routes */}
           <Route path="/upload" element={
-            <ProtectedRoute user={user}>
+            // <ProtectedRoute user={user}>
               <ColorExtractor history={history} setHistory={setHistory} user={user} setUser={setUser} />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           } />
           
           <Route path="/picker" element={
-            <ProtectedRoute user={user}>
+            // <ProtectedRoute user={user}>
               <ColorPickerButton user={user} />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           } />
           
           {/* Public Routes */}
           {/* <Route path="/palettes" element={<ColorPaletteSearch colorData={colorData} user={user} />} /> */}
           <Route path="/palettes" element={
-            <ProtectedRoute user={user}>
+            
               <ColorPaletteSearch colorData={colorData} user={user} />
-            </ProtectedRoute>
+           
           } />
           <Route path="/history" element={
-            <ProtectedRoute user={user}>
+            // <ProtectedRoute user={user}>
               <HistoryPage history={history} user={user} />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           } />
           {/* <Route path="/gradient" element={<GradientMaker user={user} />} /> */}
           <Route path="/gradient" element={
-            <ProtectedRoute user={user}>
+            // <ProtectedRoute user={user}>
               <GradientMaker user={user} />
-            </ProtectedRoute>
+            // </ProtectedRoute>
           } />
-          {/* <Route path="/imagePreview" element={<ColorReplacerr/>}/> */}
-          <Route path="/imagePreview" element={
+          <Route path="/imagePreview" element={<ColorReplacerr/>}/>
+          {/* <Route path="/imagePreview" element={
             <ProtectedRoute user={user}>
               <ColorReplacerr />
             </ProtectedRoute>
-          } />
+          } /> */}
           {/* Fallback for protected route attempts */}
           <Route path="/protected-notification" element={<ProtectedRouteNotification />} />
         </Routes>

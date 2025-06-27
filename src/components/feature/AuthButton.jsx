@@ -113,7 +113,7 @@ const AuthButton = ({ user, setUser  }) => {
 
   // Get the display name with fallback to email
   const getDisplayName = () => {
-    return user?.user_metadata?.name || user?.email?.split[0] || 'User ';
+    return user?.user_metadata?.name ||  email[0].toUpperCase() || 'User ';
   };
 
   const handleClickOutside = (event) => {

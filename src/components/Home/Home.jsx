@@ -149,12 +149,12 @@ function Home() {
   const navigate = useNavigate();
 
   const handleExploreClick = async () => {
-    const { data: { user } } = await supabase.auth.getUser (); // Use getUser () to retrieve the current user
-    if (user) {
+    // const { data: { user } } = await supabase.auth.getUser (); // Use getUser () to retrieve the current user
+    // if (user) {
       navigate('/upload'); // Navigate to upload if user is authenticated
-    } else {
-      navigate('/auth'); // Redirect to AuthPage if not authenticated
-    }
+    // } else {
+    //   navigate('/auth'); // Redirect to AuthPage if not authenticated
+    // }
   };
 
   return (
