@@ -1,5 +1,5 @@
 import { Link,useNavigate } from 'react-router-dom';
-import './historyPage.css';
+import './historypage.css';
 import BottomFooter from '../Footer/BottomFooter';
 
 function rgbToHex(r, g, b) {
