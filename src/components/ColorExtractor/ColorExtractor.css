@@ -155,9 +155,13 @@
   font-family: "Akronim", system-ui;
   font-weight: 400;
   font-style: normal;
-
-
+  
+    background: linear-gradient(to right, #ffffff, #f1ed36);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+
 
 .subtitle {
   font-size: 16px;
