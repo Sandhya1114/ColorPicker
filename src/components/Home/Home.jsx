@@ -146,7 +146,7 @@ import './home.css';
 import Footer from '../Footer/Footer';
 
 function Home() {
-  /"const navigate = useNavigate();
+   const navigate = useNavigate();
 
   // const handleExploreClick = async () => {
     // const { data: { user } } = await supabase.auth.getUser (); // Use getUser () to retrieve the current user

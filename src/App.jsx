@@ -130,7 +130,7 @@ function App() {
           
           <Route path="/picker" element={
             // <ProtectedRoute user={user}>
-              <ColorPickerButton user={user} />
+              <ColorPickerButton />
             // </ProtectedRoute>
           } />
           
