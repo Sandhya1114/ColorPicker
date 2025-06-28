@@ -190,8 +190,7 @@
 }
 .color-box {
     position: relative;
-    width: 21px;
-    height: 152px;
+    
     cursor: pointer;
     transition: transform 0.2s ease;
 }

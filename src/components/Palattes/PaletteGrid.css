@@ -4,7 +4,10 @@
 }
 
 .categoryButtons {
+  width: 80vw;
+  margin: auto;
   margin-bottom: 20px;
+   margin-top: 20px;
 }
 
 .categoryButton {
@@ -17,20 +20,32 @@
    
     border: 2px solid white;
     color: white;
-    border-radius: 10px;
+    border-radius: 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 15px 39px;
+    margin-bottom: 20px;
+   
 }
 
    
     
 
 .categoryButton:hover {
-  background-color: #0f0f0f;
+  background-color: #dde5b6;
+  color: #ffffff;
+   background: linear-gradient(to right, #080808, #e9f5db);
+ transform: scale(1.05);
+ border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .categoryButton.active {
-  background-color: #0c0c0c;
-  color: #fff;
+  /* background-color: #ffb3c6; */
+    color: #fff;
+      background: linear-gradient(to right, #080808, #ffedd8);
+      border: none;
 }
+
 
 .paletteList {
   display: flex;
