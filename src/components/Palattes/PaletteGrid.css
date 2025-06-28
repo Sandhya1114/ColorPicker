@@ -33,10 +33,10 @@
 .categoryButton:hover {
   background-color: #dde5b6;
   color: #ffffff;
-   background: linear-gradient(to right, #080808, #e9f5db);
+   background: linear-gradient(to right, #000000, #e9f5db);
  transform: scale(1.05);
  border: none;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
 }
 
 .categoryButton.active {

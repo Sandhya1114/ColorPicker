@@ -1030,7 +1030,22 @@ const colorNames = {
     '#9E9E9E', '#949494', '#8A8A8A', '#808080', '#767676', '#6C6C6C',
     '#626262', '#585858', '#4E4E4E', '#444444', '#3A3A3A', '#303030',
     '#262626', '#1C1C1C', '#121212', '#080808', '#000000'
-  ]
+  ],
+  'dark red': ['#d50000', '#A31D1D', '#450000', '#8B0000', '#7B001C', '#5E1914'], // Deep/rich reds from original
+  'light red': ['#ff8a80', '#ffcdd2', '#FFB38E', '#FFCF9D', '#F6DED8'], // Soft/pale reds from original
+  'bright red': ['#ff0000', '#ff1744', '#E82561', '#FB4141', '#FF204E'], // Vivid reds from original
+  // ----- BLUE VARIATIONS -----
+  'dark blue': ['#0000ff', '#1a237e', '#092635', '#00224D', '#0F1C52'], // Dark blues from original
+  'light blue': ['#bbdefb', '#e3f2fd', '#A8F1FF', '#B7E0FF', '#68D2E8'], // Light blues from original
+  'deep blue': ['#090040', '#00008B', '#344955', '#27374D'], // Blues with depth from original
+  // ----- PURPLE VARIATIONS -----
+  'dark purple': ['#4a148c', '#341F4B', '#2E073F'], 
+  'light purple': ['#e1bee7', '#D57AAA', '#F487B6'],
+  'vibrant purple': ['#9c27b0', '#7b1fa2', '#6a1b9a', '#D416D9'],
+  // ----- GREEN VARIATIONS -----
+  'dark green': ['#004D40', '#1B5E20', '#2E7D32', '#0A3A2A'],
+  'light green': ['#b9f6ca', '#C8E6C9', '#F4FFC3', '#E8FFD8'],
+  'earthy green': ['#5D8736', '#809D3C', '#A9C46C', '#347433'],
 };
 
 

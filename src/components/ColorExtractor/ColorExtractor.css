@@ -103,12 +103,15 @@
   cursor: pointer;
   transition: transform .2s ease-out;
   font-size: 25px;
-  background-color: #475C4D;
+  /* background-color: #475C4D; */
+  background: linear-gradient(to right, #f8f8f8, #475C4D);
 }
 
 .file-input label:hover{
  background: linear-gradient(to right, #080808, #f1ed36);
  transform: scale(1.05);
+ box-shadow: 0 8px 20px rgba(212, 210, 210, 0.4);
+ border: 1px solid white;
 }
 
 .file-input.active {
