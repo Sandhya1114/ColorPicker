@@ -106,8 +106,8 @@ const GradientMaker = () => {
                             <h3 className="section-title">Gradient Type</h3>
                             <div className="buttons">
                                 <button onClick={() => setGradientType('linear')} className={`gradient-type-btn ${gradientType === 'linear' ? 'active' : ''}`}>Linear</button>
-                                <button onClick={() => setGradientType('radial')} className={`gradient-type-btn ${gradientType === 'radial' ? 'active' : ''}`}>Radial</button>
-                                <button onClick={() => setGradientType('conic')} className={`gradient-type-btn ${gradientType === 'conic' ? 'active' : ''}`}>Conic</button>
+                                {/* <button onClick={() => setGradientType('radial')} className={`gradient-type-btn ${gradientType === 'radial' ? 'active' : ''}`}>Radial</button>
+                                <button onClick={() => setGradientType('conic')} className={`gradient-type-btn ${gradientType === 'conic' ? 'active' : ''}`}>Conic</button> */}
                             </div>
                         </div>
 
@@ -177,12 +177,12 @@ const GradientMaker = () => {
                             <div className="preset-item" style={{ background: 'radial-gradient(circle, rgba(88, 28, 135, 1), rgba(49, 46, 129, 1))' }} onClick={() => applyPreset('radial-gradient(circle, rgba(88, 28, 135, 1), rgba(49, 46, 129, 1))')}></div>
                         </div>
                     </div>
-
+{/* 
                     <div className="export-options">
                         <h3 className="section-title">Export</h3>
                         <button className="export-btn">Download PNG</button>
                         <button className="export-btn">Save as Preset</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
