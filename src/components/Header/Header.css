@@ -72,3 +72,137 @@
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
+.header {
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #d3d3d373;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 37px;
+  /* background: linear-gradient(120deg, #ff6ec4, #7873f5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  /* background: #FF8B4E;
+  background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%); */
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 24px;
+  
+}
+
+.logo img{
+  border-radius: 30px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  font-size: 19px;
+  color: white;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  position: relative;
+}
+
+/* .navLinks a:hover{
+  background-color: #131212;
+  color: #fff;
+} */
+/* 
+.navLinks a:active {
+  background-color: rgba(255, 255, 255, 0.2);
+} */
+.headerSearchInput {
+  margin-left: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 220px;
+}
+
+
+
+
+
+.auth-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.username {
+  font-weight: 500;
+  color: #ffffff;
+}
+.logout-btn {
+  background-color: #02020200;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hide hamburger on larger screens */
+.hamburger-wrapper {
+  display: none;
+}
+
+/* Show nav links normally */
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Mobile styles (max-width: 390px) --- */
+@media (max-width: 490px) {
+  .header{
+    width: 98%;
+  }
+  .headerContainer {
+    width: 94%;
+    padding: 5px;
+  }
+  .logo img{
+    
+    width: 162px;
+    margin-left: 9px;
+  }
+  .hamburger-wrapper {
+    display: block;
+    margin-right: -15px;
+  }
+  .navLinks {
+    position: absolute;
+    top: 67px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    padding: 19px;
+  }
+  .navLinks.open {
+    display: flex;
+  }
+  .navLinks a {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .navLinks.open {
+        display: flex;
+        width: 85vw;
+        justify-content: center;
+        margin: auto;
+        background-color: black;
+        box-shadow: 0 19px 22px rgb(204 192 192 / 24%);
+        border-radius: 20px;
+        margin-top: 26px;
+        
+  }
+}

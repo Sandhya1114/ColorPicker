@@ -330,3 +330,105 @@ input[type=range]:focus::-ms-fill-upper {
     cursor: pointer;
     margin-bottom: 0.5rem;
 }
+
+
+@media screen and (max-width: 390px) {
+  .title {
+    font-size: 2.5rem;
+    margin-top: -15px;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .controls,
+  .color-stops,
+  .css-output,
+  .presets,
+  .export-options {
+    padding: 1rem;
+  }
+  .preset-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .preset-item {
+    width: 100%;
+    height: 50px;
+  }
+  .angle-control,
+  .color-stop-control {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-left: 0;
+  }
+
+  .preview-section {
+    width: 70%;
+  }
+
+  .gradient-preview {
+    width: 95%;
+  }
+
+  .controls {
+    width: 85%;
+  }
+
+  .angle-control input {
+    width: 100%;
+  }
+
+  .color-stops{
+    width: 85%;
+  }
+
+  .color-controls {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .color-stop-control {
+    width: 45%;
+  }
+
+  .color-stop-control input[type='range']{
+    width: 100%;
+  }
+
+  .grid {
+    width: 100%;
+  }
+
+  .output-section {
+    width: 60%;
+  }
+
+  .css-output{
+    width:100%;
+  }
+
+  .css-output pre {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .copy-btn {
+    margin-top: 5px;
+  }
+
+  .presets {
+    width: 100%;
+  }
+
+  .export-options {
+    width: 100%;
+  }
+}

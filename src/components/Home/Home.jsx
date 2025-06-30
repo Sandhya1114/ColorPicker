@@ -245,7 +245,7 @@ const handleExploreClick=()=>{
 
 
       {/* Services Section */}
-        <div className="servicesSection">
+       <div className="servicesSection">
         <h2 className="servicesHeading">Our Offerings</h2>
         
         <div className="servicesList">

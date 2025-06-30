@@ -359,16 +359,21 @@
   font-style: normal;
   }
   .subtitle {
-    font-size: 20px;
-    font-weight: 400;
-  margin-bottom: 0px;
-  color: #fff;
-  margin-top: 20px;
-  margin-left: 0px;
+   font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        color: #cdc7c7;
+        margin-top: 10px;
+        margin-left: 0px;
   }
 
   .file-input label {
-    font-weight: 400;
+   
+    font-weight: 300;
+        margin: auto;
+       width: 198px;
+       height: 51px;  
+        margin-top: 15px;
   }
 
   .rightPanel {
@@ -382,8 +387,15 @@
   .colorGrid {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 1px;
+  flex-wrap: wrap;}
+  .forDivieded .history-btn{
+
+     width: 166px;
+     padding: 14px;
+    margin-left: 52vw;
+
+  
 }
 }
 
