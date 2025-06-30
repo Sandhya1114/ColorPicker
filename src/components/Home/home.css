@@ -86,12 +86,12 @@
 }
 
 
-/* Services Section */
-.servicesSection {
-  padding: 60px 20px;
+ 
+/* .servicesSection {
+  padding: 60px 20px; */
   /* background: #f3f4f6; */
-  text-align: center;
-}
+  /* text-align: center;
+} */
 .pickergen{  
     width: 80vw;
     margin: auto;
@@ -107,27 +107,27 @@
   font-size: 36px;
   margin-bottom: 30px;
   color: #fff;
+  text-align: center;
+  margin-bottom: 5vh;
 }
-
+/* 
 .servicesList {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-}
-
+} */
+/* 
 .serviceBox {
   background-color: black;
   border:1px solid white;
-  /* background: #FF8B4E;
-  background: linear-gradient(90deg, rgba(255, 139, 78, 1) 0%, rgba(255, 3, 105, 1) 99%); */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   padding: 59px;
   width: 278px;
    transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
-}
+} */
 
 .serviceBox h3 {
   font-size: 18px;
@@ -147,12 +147,12 @@
   
 }
 
-
+/* 
 .serviceBox:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
- 
-}
+  */
+/* } */
 .forPalettes{
   margin-top: 10vh;
   display: flex;
@@ -474,4 +474,96 @@ body {
 .card:hover::before {
     opacity: 1;
 }
+}
+
+
+
+.servicesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  width: 80vw;
+    margin: auto;
+}
+
+.serviceBox {
+    width: calc(25% - 2rem);
+    margin: 1rem;
+    perspective: 1000px;
+}
+
+.container {
+    position: relative;
+    width:100%;
+    height: 400px; /* Set a fixed height for the boxes */
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    
+}
+
+.front {
+    background-color: #0b0b0b; /* Change as needed */
+}
+
+.back {
+    /* background: linear-gradient(45deg, #cedce7 0%, #596a72 100%); */
+    transform: rotateY(180deg);
+    background-color: #0b0b0b;
+}
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    color: white; /* Text color for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container:hover {
+    transform: rotateY(180deg);
+}
+
+.inner {
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 64rem) {
+    .serviceBox {
+        width: calc(33.333333% - 2rem);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .serviceBox {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (max-width: 32rem) {
+    .serviceBox {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
 }

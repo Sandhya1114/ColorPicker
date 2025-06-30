@@ -245,7 +245,7 @@ const handleExploreClick=()=>{
 
 
       {/* Services Section */}
-       <div className="servicesSection">
+       {/* <div className="servicesSection">
         <h2 className="servicesHeading">Our Offerings</h2>
         
         <div className="servicesList">
@@ -275,7 +275,119 @@ const handleExploreClick=()=>{
             <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
           </div>
         </div>
-      </div>
+      </div> */}
+      <div className="servicesSection">
+    <h2 className="servicesHeading">Our Offerings</h2>
+    
+    <div className="servicesList">
+        <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
+            <div className="container">
+                <div className="front" style={{ backgroundImage: "url('./RedWhiteFlo.jpg')" }}>
+                    <div className="inner">
+                
+                    </div>
+                </div>
+                <div className="back" >
+                    <div className="inner" >
+                        {/* <p>Explore various color combinations tailored for your projects.</p> */}
+                        <h3>Generate Color Palettes</h3>
+                        <p>Create custom palettes based on your image colors for UI/UX or branding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
+            <div className="container">
+                <div className="front" style={{ backgroundImage: "url('./yeFlo.jpg')" }}>
+                    <div className="inner">
+                        {/* <h3>Extract Dominant Colors</h3>
+                        <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p> */}
+                    </div>
+                </div>
+                <div className="back" >
+                    <div className="inner" >
+                        {/* <p>Get the most prominent colors from your images quickly.</p> */}
+                         <h3>Extract Dominant Colors</h3>
+                        <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
+            <div className="container">
+                <div className="front" style={{ backgroundImage: "url('./oceanpink.jpg')" }}>
+                    <div className="inner">
+                        {/* <h3>Download or Share</h3>
+                        <p>Save your palette or copy hex codes to use in your projects or share with your team.</p> */}
+                    </div>
+                </div>
+                <div className="back" >
+                    <div className="inner">
+                        {/* <p>Easily share your color palettes with your team.</p> */}
+                        <h3>Download or Share</h3>
+                        <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
+            <div className="container">
+                <div className="front" style={{ backgroundImage: "url('./whiteeFlo.jpg')" }}>
+                    <div className="inner">
+                        
+                    </div>
+                </div>
+                <div className="back" >
+                    <div className="inner">
+                        {/* <p>Get various shades for better design flexibility.</p> */}
+                         <h3>Colors Picker with Shades</h3>
+                        <p>Generate multiple shades of a color in HEX format.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
+            <div className="container">
+                <div className="front" style={{ backgroundImage: "url('./yellowFlo.jpg')" }}>
+                    <div className="inner">
+                       
+                    </div>
+                </div>
+                <div className="back" >
+                    <div className="inner">
+                     
+                        {/* <p>Design beautiful gradients for your projects.</p> */}
+                        <h3>Generate Color Gradient</h3>
+                        <p>Create custom gradients and get their code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
+            <div className="container">
+                <div className="front" style={{ backgroundImage: "url('./lotous.jpg')" }}>
+                    <div className="inner">
+                        {/* <h3>Get Thousands of Palettes</h3>
+                        <p>Access a vast collection of color palettes for inspiration.</p> */}
+                    </div>
+                </div>
+                <div className="back">
+                    <div className="inner">
+                        {/* <p>Find the perfect palette for your next project.</p> */}
+                        <h3>Get Thousands of Palettes</h3>
+                        <p>Access a vast collection of color palettes for inspiration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
       <Footer />
