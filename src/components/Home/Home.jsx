@@ -292,6 +292,7 @@ const handleExploreClick=()=>{
                         {/* <p>Explore various color combinations tailored for your projects.</p> */}
                         <h3>Generate Color Palettes</h3>
                         <p>Create custom palettes based on your image colors for UI/UX or branding.</p>
+                        <button className="cardButton" onClick={() => navigate('/upload')}>Explore</button>
                     </div>
                 </div>
             </div>
@@ -299,7 +300,7 @@ const handleExploreClick=()=>{
         
         <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
             <div className="container">
-                <div className="front" style={{ backgroundImage: "url('./yeFlo.jpg')" }}>
+                <div className="front" style={{ backgroundImage: "url('./whiteFlow.jpg')" }}>
                     <div className="inner">
                         {/* <h3>Extract Dominant Colors</h3>
                         <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p> */}
@@ -310,6 +311,7 @@ const handleExploreClick=()=>{
                         {/* <p>Get the most prominent colors from your images quickly.</p> */}
                          <h3>Extract Dominant Colors</h3>
                         <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
+                        <button className="cardButton" onClick={() => navigate('/upload')}>Explore</button>
                     </div>
                 </div>
             </div>
@@ -328,6 +330,7 @@ const handleExploreClick=()=>{
                         {/* <p>Easily share your color palettes with your team.</p> */}
                         <h3>Download or Share</h3>
                         <p>Save your palette or copy hex codes to use in your projects or share with your team.</p>
+                        <button className="cardButton" onClick={() => navigate('/upload')}>Explore</button>
                     </div>
                 </div>
             </div>
@@ -345,6 +348,7 @@ const handleExploreClick=()=>{
                         {/* <p>Get various shades for better design flexibility.</p> */}
                          <h3>Colors Picker with Shades</h3>
                         <p>Generate multiple shades of a color in HEX format.</p>
+                        <button className="cardButton " onClick={() => navigate('/picker')}>Explore</button>
                     </div>
                 </div>
             </div>
@@ -363,6 +367,7 @@ const handleExploreClick=()=>{
                         {/* <p>Design beautiful gradients for your projects.</p> */}
                         <h3>Generate Color Gradient</h3>
                         <p>Create custom gradients and get their code.</p>
+                        <button className="cardButton " onClick={() => navigate('/gradient')}>Explore</button>
                     </div>
                 </div>
             </div>
@@ -370,7 +375,7 @@ const handleExploreClick=()=>{
 
         <div className="serviceBox" ontouchstart="this.classList.toggle('hover');">
             <div className="container">
-                <div className="front" style={{ backgroundImage: "url('./lotous.jpg')" }}>
+                <div className="front" style={{ backgroundImage: "url('./redFlower.jpg')" }}>
                     <div className="inner">
                         {/* <h3>Get Thousands of Palettes</h3>
                         <p>Access a vast collection of color palettes for inspiration.</p> */}
@@ -381,6 +386,7 @@ const handleExploreClick=()=>{
                         {/* <p>Find the perfect palette for your next project.</p> */}
                         <h3>Get Thousands of Palettes</h3>
                         <p>Access a vast collection of color palettes for inspiration.</p>
+                        <button className="cardButton " onClick={() => navigate('/palettes')}>Explore</button>
                     </div>
                 </div>
             </div>

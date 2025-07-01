@@ -523,7 +523,21 @@ body {
     transition: transform 0.3s ease, background 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
-
+.cardButton{
+  padding: 12px 35px;
+    font-size: 26px;
+    /* background: linear-gradient(120deg, #ff6ec4, #7873f5); */
+    background-color: rgb(255, 255, 255);
+    /* color: #000; */
+    color: #44594A;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    margin-top: 2vh;
+}
 .back {
     /* background: linear-gradient(45deg, #cedce7 0%, #596a72 100%); */
     transform: rotateY(180deg);
