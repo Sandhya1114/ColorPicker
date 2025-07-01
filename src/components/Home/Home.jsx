@@ -309,9 +309,10 @@ const handleExploreClick=()=>{
                 <div className="back" >
                     <div className="inner" >
                         {/* <p>Get the most prominent colors from your images quickly.</p> */}
-                         <h3>Extract Dominant Colors</h3>
-                        <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
-                        <button className="cardButton" onClick={() => navigate('/upload')}>Explore</button>
+                        <h3>Colors Picker with Shades</h3>
+                        <p>Generate multiple shades of a color in HEX format.</p>
+                        <button className="cardButton " onClick={() => navigate('/picker')}>Explore</button>
+                        
                     </div>
                 </div>
             </div>
@@ -346,9 +347,10 @@ const handleExploreClick=()=>{
                 <div className="back" >
                     <div className="inner">
                         {/* <p>Get various shades for better design flexibility.</p> */}
-                         <h3>Colors Picker with Shades</h3>
-                        <p>Generate multiple shades of a color in HEX format.</p>
-                        <button className="cardButton " onClick={() => navigate('/picker')}>Explore</button>
+                         
+                         <h3>Extract Dominant Colors</h3>
+                        <p>Upload any image and instantly get the top 4 visible colors in HEX format.</p>
+                        <button className="cardButton" onClick={() => navigate('/upload')}>Explore</button>
                     </div>
                 </div>
             </div>
@@ -387,6 +389,7 @@ const handleExploreClick=()=>{
                         <h3>Get Thousands of Palettes</h3>
                         <p>Access a vast collection of color palettes for inspiration.</p>
                         <button className="cardButton " onClick={() => navigate('/palettes')}>Explore</button>
+                        
                     </div>
                 </div>
             </div>
