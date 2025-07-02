@@ -145,3 +145,56 @@
     /* margin: 6px; */
 /* }
 } */
+.backGen p{
+ text-align: center;
+ color: #e2dddd;
+ margin-bottom: 5vh;
+}
+.backGen button{
+  margin-left: 29vw;
+}
+.backBtn {
+  position: relative;
+  
+  color: white;
+  background-color: rgb(8, 8, 8);
+  /* border: 4px double white; */
+  border-radius: 35px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Rotating white ring */
+.backBtn::before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -2;
+  animation: animate 4s linear infinite;
+}
+
+/* Cover to maintain inner button appearance */
+.backBtn::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background-color: rgb(9, 9, 9);
+  border-radius: 31px; /* 35px - 4px border inset */
+  z-index: -1;
+}
+
+/* Rotation animation */
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

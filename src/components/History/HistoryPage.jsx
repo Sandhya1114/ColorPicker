@@ -97,9 +97,9 @@ export default function HistoryPage() {
       <button onClick={() => navigate(-1)} className="backBtn">
         ← Back
       </button>
-      <button className="backBtn" onClick={() => navigate('/upload')}>
+      {/* <button className="backBtn" onClick={() => navigate('/upload')}>
         Palette Generator
-      </button>
+      </button> */}
 
       <h2 className="HistoryHeading">Searched Images</h2>
       <p className="historyLine">
@@ -140,6 +140,13 @@ export default function HistoryPage() {
           ))}
         </div>
       )}
+      <div className='backGen'>
+         <p>go back to Palette Generator</p>
+          <button className="backBtn" onClick={() => navigate('/upload')}>
+            Palette Generator
+          </button>
+      </div>
+      
       <BottomFooter />
     </div>
   );
