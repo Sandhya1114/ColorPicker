@@ -72,7 +72,7 @@ button:focus-visible {
   /* background-color: #070707; */
    /* background: #E5EAE3;
     /* background: linear-gradient(80deg, rgba(229, 234, 227, 1) 0%, rgba(124, 147, 129, 1) 52%, rgba(64, 85, 70, 1) 100%); */
-    background: #ffffff;
+    /* background: #ffffff; */
     background: linear-gradient(80deg, rgba(255, 255, 255, 1) 0%, rgba(124, 147, 129, 1) 52%, rgba(64, 85, 70, 1) 100%); 
 /* background: #ffffff;
 background: linear-gradient(80deg, rgba(255, 255, 255, 1) 0%, rgba(132, 186, 162, 1) 52%); */
