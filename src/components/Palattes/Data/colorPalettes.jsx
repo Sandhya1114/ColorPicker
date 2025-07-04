@@ -1379,7 +1379,7 @@ const colorData = {
     "retro-023": { colors: ["#F9C62D", "#F57920", "#E43C64", "#AA1455"], category_id: 8},
     "retro-024": { colors: ["#F9CCE1", "#009FD9", "#064F6E", "#132229"], category_id: 8},
 
-    "happy-001": { colors: ["#FFFBDE","#91C8E4","#749BC2","#4682A9"], category_id: 9 },
+    "happy-001": { colors:["#FFFBDE","#91C8E4","#749BC2","#4682A9"], category_id:9 },
     "happy-002": { colors: ["#347433","#FFC107","#FF6F3C","#B22222"], category_id: 9 },
     "happy-003": { colors: ["#4DA8DA","#80D8C3","#FFD66B","#F5F5F5"], category_id: 9 },
     "happy-004": { colors: ["#FFDCDC","#3E432E","#FFE8CD","#FFD6BA"], category_id: 9 },
@@ -1399,7 +1399,7 @@ const colorData = {
     "happy-018": { colors: ["#89AC46","#D3E671","#F8ED8C","#FF8989"], category_id: 9 },
     "happy-019": { colors: ["#000000","#FDAB9E","#616F39","#E50046"], category_id: 9 },
     "happy-020": { colors: ["#626F47","#A4B465","#FFCF50","#FEFAE0"], category_id: 9 },
-
+     
     "happy-023": { colors: ["#1A1A1D", "#4E4E50", "#6F2232", "#C3073F"], category_id: 9 },
     "happy-024": { colors: ["#0B132B", "#1C2541", "#3A506B", "#5BC0BE"], category_id: 9 },
     "happy-025": { colors: ["#2E4057", "#1C2833", "#566573", "#99A3A4"], category_id: 9 },
@@ -1700,7 +1700,7 @@ const colorData = {
     8:["retro-001","retro-002","retro-003","retro-004","retro-005","retro-006","retro-007","retro-008","retro-009","retro-010","retro-011","retro-012","retro-013","retro-014","retro-015","retro-016","retro-017","retro-018","retro-019","retro-020","retro-021","retro-023","retro-024"
     ],
     9:[
-      "happy-001","happy-002","happy-003","happy-004","happy-005","happy-006","happy-007","happy-008","happy-009","happy-010","happy-011","happy-012","happy-013","happy-014","happy-015","happy-016","happy-017","happy-018","happy-019","happy-020","happy-021","happy-023","happy-023","happy-024","happy-025","happy-026","happy-027","happy-028","happy-029","happy-030","happy-031","happy-032","happy-033","happy-034","happy-035","happy-036", "happy-037", "happy-038", "happy-039", "happy-040","happy-041","happy-042","happy-043","happy-044", "happy-045", "happy-046", "happy-047", "happy-048",
+      "happy-001","happy-002","happy-003","happy-004","happy-005","happy-006","happy-007","happy-008","happy-009","happy-010","happy-011","happy-012","happy-013","happy-014","happy-015","happy-016","happy-017","happy-018","happy-019","happy-020","happy-023","happy-024","happy-025","happy-026","happy-027","happy-028","happy-029","happy-030","happy-031","happy-032","happy-033","happy-034","happy-035","happy-036", "happy-037", "happy-038", "happy-039", "happy-040","happy-041","happy-042","happy-043","happy-044", "happy-045", "happy-046", "happy-047", "happy-048",
       "happy-049", "happy-050"
     ],
     10: [
