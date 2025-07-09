@@ -466,6 +466,9 @@
 // };
 
 // export default ColorReplacerr;
+
+
+//color palettess
 import { useState, useRef, useEffect } from 'react';
 import ColorThief from 'colorthief';
 import colorData from '../Palattes/Data/colorPalettes';
@@ -1030,3 +1033,225 @@ const styles = {
 };
 
 export default ColorReplacerr;
+
+
+// importing canva
+
+// import { useState, useRef, useEffect } from 'react';
+// import colorData from '../Palattes/Data/colorPalettes';
+
+// const ColorReplacerr = () => {
+//   const [originalColors, setOriginalColors] = useState([]);
+//   const [colorReplacements, setColorReplacements] = useState([]);
+//   const [image, setImage] = useState(null);
+//   const [processedImage, setProcessedImage] = useState(null);
+//   const [isProcessing, setIsProcessing] = useState(false);
+//   const [similarityThreshold, setSimilarityThreshold] = useState(30);
+//   const [selectedCategory, setSelectedCategory] = useState('');
+//   const canvasRef = useRef(null);
+//   const fileInputRef = useRef(null);
+
+//   const handleImageUpload = (e) => {
+//     const file = e.target.files[0];
+//     if (!file) return;
+//     const reader = new FileReader();
+//     reader.onload = (evt) => {
+//       const img = new Image();
+//       img.onload = () => {
+//         setImage(img);
+//         setProcessedImage(null);
+//         const dominantColors = extractDominantColors(img);
+//         setOriginalColors(dominantColors);
+//         setColorReplacements(dominantColors.map(c => ({ original: c, replacement: c })));
+//       };
+//       img.src = evt.target.result;
+//     };
+//     reader.readAsDataURL(file);
+//   };
+
+//   const extractDominantColors = (img) => {
+//     const canvas = document.createElement('canvas');
+//     canvas.width = img.width;
+//     canvas.height = img.height;
+//     const ctx = canvas.getContext('2d');
+//     ctx.drawImage(img, 0, 0);
+//     const data = ctx.getImageData(0, 0, img.width, img.height).data;
+//     const count = {};
+//     for (let i = 0; i < data.length; i += 4) {
+//       const key = `${data[i]},${data[i+1]},${data[i+2]}`;
+//       count[key] = (count[key] || 0) + 1;
+//     }
+//     return Object.entries(count)
+//       .sort((a, b) => b[1] - a[1])
+//       .slice(0, 4)
+//       .map(([k]) => {
+//         const [r, g, b] = k.split(',').map(Number);
+//         return rgbToHex(r, g, b);
+//       });
+//   };
+
+//   const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
+//   const hexToRgb = (hex) => {
+//     const res = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+//     return res ? { r: parseInt(res[1],16), g: parseInt(res[2],16), b: parseInt(res[3],16) } : null;
+//   };
+//   const getDistance = (c1, c2) => Math.sqrt((c1.r - c2.r)**2 + (c1.g - c2.g)**2 + (c1.b - c2.b)**2);
+//   const getLuminance = (c) => 0.299*c.r + 0.587*c.g + 0.114*c.b;
+
+//   const handleReplacementChange = (i, val) => {
+//     const cp = [...colorReplacements];
+//     cp[i].replacement = val;
+//     setColorReplacements(cp);
+//   };
+
+//   const handlePaletteSelect = (e) => {
+//     const key = e.target.value;
+//     setSelectedCategory(key);
+//     if (!originalColors.length || !key) return;
+//     const colors = colorData.Palettes[key].colors;
+//     const rep = originalColors.map((orig, i) => ({
+//       original: orig,
+//       replacement: colors[i % colors.length]
+//     }));
+//     setColorReplacements(rep);
+//   };
+
+//   const processImage = () => {
+//     if (!image) return;
+//     setIsProcessing(true);
+//     const canvas = canvasRef.current;
+//     canvas.width = image.width;
+//     canvas.height = image.height;
+//     const ctx = canvas.getContext('2d');
+//     ctx.drawImage(image, 0, 0);
+//     const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+//     const d = imgData.data;
+
+//     const reps = colorReplacements.map(({original, replacement}) => {
+//       const o = hexToRgb(original), n = hexToRgb(replacement);
+//       return { o, n, lumO: o && getLuminance(o) };
+//     });
+
+//     for (let i = 0; i < d.length; i += 4) {
+//       const p = { r: d[i], g: d[i + 1], b: d[i + 2] };
+//       const lumP = getLuminance(p);
+//       reps.forEach(({o, n, lumO}) => {
+//         if (!o || !n) return;
+//         if (getDistance(p, o) <= similarityThreshold) {
+//           const ratio = lumO ? lumP / lumO : 1;
+//           d[i] = Math.min(255, Math.max(0, Math.round(n.r * ratio)));
+//           d[i + 1] = Math.min(255, Math.max(0, Math.round(n.g * ratio)));
+//           d[i + 2] = Math.min(255, Math.max(0, Math.round(n.b * ratio)));
+//         }
+//       });
+//     }
+
+//     ctx.putImageData(imgData, 0, 0);
+//     setProcessedImage(canvas.toDataURL());
+//     setIsProcessing(false);
+//   };
+
+//   const downloadImage = () => {
+//     if (!processedImage) return;
+//     const link = document.createElement('a');
+//     link.href = processedImage;
+//     link.download = 'color-replaced.png';
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+//   };
+
+//   useEffect(() => {
+//     if (canvasRef.current && image) {
+//       const c = canvasRef.current, ctx = c.getContext('2d');
+//       c.width = image.width; c.height = image.height;
+//       ctx.drawImage(image, 0, 0);
+//     }
+//   }, [image]);
+
+//   return (
+//     <div style={styles.container}>
+//       <h2>Color Replacer</h2>
+//       <input type="file" accept="image/*" onChange={handleImageUpload} ref={fileInputRef} />
+//       <div style={{ marginTop: 20 }}>
+//         <label>Similarity Threshold: {similarityThreshold}</label>
+//         <input
+//           type="range"
+//           min={0}
+//           max={255}
+//           value={similarityThreshold}
+//           onChange={(e) => setSimilarityThreshold(Number(e.target.value))}
+//         />
+//       </div>
+//       {originalColors.length > 0 && (
+//         <div style={styles.colorContainer}>
+//           {colorReplacements.map((c, i) => (
+//             <div key={i} style={styles.colorRow}>
+//               <div style={{ ...styles.colorBox, backgroundColor: c.original }}> </div>
+//               ➜
+//               <input
+//                 type="color"
+//                 value={c.replacement}
+//                 onChange={(e) => handleReplacementChange(i, e.target.value)}
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       )}
+//       <div>
+//         <label>Select Palette:</label>
+//         <select onChange={handlePaletteSelect} value={selectedCategory}>
+//           <option value="">--Choose--</option>
+//           {Object.keys(colorData.Palettes).map((key) => (
+//             <option key={key} value={key}>{key}</option>
+//           ))}
+//         </select>
+//       </div>
+//       <button onClick={processImage} disabled={isProcessing}>Process</button>
+//       {processedImage && <button onClick={downloadImage}>Download</button>}
+//       <div style={styles.imagePreview}>
+//         {image && <img src={image.src} alt="original" style={styles.img} />}
+//         {processedImage && <img src={processedImage} alt="processed" style={styles.img} />}
+//       </div>
+//       <canvas ref={canvasRef} style={{display:'none'}}/>
+//     </div>
+//   );
+// };
+
+// const styles = {
+//   container: {
+//     display: 'flex',
+//     flexDirection: 'column',
+//     gap: '1rem',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//     padding: '20px',
+//     fontFamily: 'Arial, sans-serif'
+//   },
+//   colorContainer: {
+//     display: 'flex',
+//     gap: '1rem',
+//     flexWrap: 'wrap'
+//   },
+//   colorRow: {
+//     display: 'flex',
+//     alignItems: 'center',
+//     gap: '0.5rem'
+//   },
+//   colorBox: {
+//     width: 30,
+//     height: 30,
+//     border: '1px solid #000'
+//   },
+//   imagePreview: {
+//     display: 'flex',
+//     gap: '1rem',
+//     marginTop: '20px'
+//   },
+//   img: {
+//     maxWidth: '300px',
+//     maxHeight: '300px'
+//   }
+// };
+
+// export default ColorReplacerr;

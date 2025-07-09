@@ -81,7 +81,7 @@
   opacity: 0;
   width: 0.1px;
   height: 0.1px;
-  position: absolute;
+  position:absolute;
 }
 
 .file-input label {
@@ -134,8 +134,6 @@
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
   background-color: black;
-  
-  
 }
 
 
@@ -332,6 +330,10 @@
  border-radius: 30px;
  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
  margin-left: 65vw;
+ color: white;
+    border: none;
+    font-size: 19px;
+
 }
 
 
@@ -390,6 +392,9 @@
   gap: 1px;
   flex-wrap: wrap;}
   .forDivieded .history-btn{
+    color: white;
+    border: none;
+    font-size: 19px;
 
      width: 166px;
      padding: 14px;
