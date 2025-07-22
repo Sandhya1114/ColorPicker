@@ -27,4 +27,4 @@ dist-ssr
 .netlify
 
 # hiding env file
-.env
+# .env
